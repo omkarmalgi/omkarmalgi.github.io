@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Omkar Malgi | Business Analyst &amp; Data Analyst Portfolio</title>
+  <meta name="description" content="Portfolio of Omkar Malgi — Business Analyst and Data Analyst in Pune, Maharashtra, India. Combining 3+ years of financial services operations experience with SQL, PostgreSQL, Excel, Tableau, BRDs, and decision intelligence.">
+  <meta name="author" content="Omkar Malgi">
+  <!-- Open Graph / Social Sharing Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Omkar Malgi — Business Analyst | Data Analyst">
+  <meta property="og:description" content="Turning complex data into meaningful business decisions through structured business analysis, SQL, Excel, Tableau, and financial domain expertise.">
+  <meta property="og:image" content="assets/images/omkar-profile.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Omkar Malgi — Business Analyst | Data Analyst">
+  <meta name="twitter:description" content="Transforming complex data into meaningful insights, solving business problems and building analytical solutions.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Subtle Cursor Spotlight (Reduced-Motion & Touch Aware) -->
+  <div id="cursor-spotlight" class="cursor-spotlight" aria-hidden="true"></div>
+
+  <!-- Interactive Chart Tooltip & In-Page Notification Banner -->
+  <div id="chart-tooltip" class="chart-tooltip" role="status" aria-live="polite"></div>
+  <div id="toast-banner" class="toast-banner" role="status" aria-live="polite"></div>
+
+  <!-- ========================================================================
+       FULL-SCREEN DASHBOARD & VISUAL LIGHTBOX MODAL
+       ======================================================================== -->
+  <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Full-Screen Dashboard View">
+    <div class="lightbox-toolbar">
+      <span class="lightbox-title">FULL-SCREEN SCREENSHOT PREVIEW // PRESS ESC OR CLICK CLOSE TO EXIT</span>
+      <button type="button" id="lightbox-close-btn" class="lightbox-close-btn">
+        <span>Close Full Screen (ESC)</span>
+      </button>
+    </div>
+    <div class="lightbox-stage">
+      <img id="lightbox-img" src="assets/images/getir-tableau-dashboard.jpg" alt="Full-screen Tableau Dashboard">
+    </div>
+    <p id="lightbox-caption" class="lightbox-caption"></p>
+  </div>
+
+  <!-- ========================================================================
+       STICKY NAVIGATION HEADER (8 Sections — No SQL Lab)
+       ======================================================================== -->
+  <header id="site-header" class="site-header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Omkar Malgi Portfolio Home">
+        <span class="brand-mark">OM</span>
+        <div class="brand-text">
+          <span id="brand-name-text">OMKAR MALGI</span>
+          <span id="brand-sub-text">BUSINESS &amp; DATA ANALYST</span>
+        </div>
+      </a>
+
+      <button id="mobile-menu-toggle" class="mobile-menu-toggle" type="button" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="nav-links">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav aria-label="Primary Navigation">
+        <ul id="nav-links" class="nav-links">
+          <li><a href="#about" class="nav-link">About Me</a></li>
+          <li><a href="#skills" class="nav-link">Analytical Skills</a></li>
+          <li><a href="#projects" class="nav-link">Featured Projects</a></li>
+          <li><a href="#methodology" class="nav-link">Decision Intelligence</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-cta">Let's Connect</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ======================================================================
+         SECTION 01 — CINEMATIC HERO WITH SEAMLESS BLENDED PORTRAIT & 3D CUBES
+         ====================================================================== -->
+    <section id="hero" class="hero-section">
+      <!-- Subtle Ambient Analytical Vector Mesh -->
+      <svg class="hero-ambient-svg" viewBox="0 0 1440 800" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="1080" cy="300" r="350" stroke="#2585E8" stroke-opacity="0.16" stroke-width="1.5" stroke-dasharray="6 8"/>
+        <circle cx="1080" cy="300" r="230" stroke="#00C9B1" stroke-opacity="0.14" stroke-width="1"/>
+        <path d="M0 640 Q 360 540 720 610 T 1440 520" stroke="#2585E8" stroke-opacity="0.22" stroke-width="1.5" fill="none"/>
+        <path d="M0 690 Q 420 590 820 650 T 1440 580" stroke="#00C9B1" stroke-opacity="0.16" stroke-width="1" fill="none"/>
+      </svg>
+
+      <!-- Selective 3D Floating Glass Data Cubes -->
+      <div class="floating-cube-scene cube-hero-top" aria-hidden="true">
+        <div class="glass-cube-3d">
+          <div class="cube-face front"></div>
+          <div class="cube-face back"></div>
+          <div class="cube-face right"></div>
+          <div class="cube-face left"></div>
+          <div class="cube-face top"></div>
+          <div class="cube-face bottom"></div>
+        </div>
+      </div>
+
+      <div class="floating-cube-scene cube-hero-bottom" aria-hidden="true">
+        <div class="glass-cube-3d cube-sm">
+          <div class="cube-face front"></div>
+          <div class="cube-face back"></div>
+          <div class="cube-face right"></div>
+          <div class="cube-face left"></div>
+          <div class="cube-face top"></div>
+          <div class="cube-face bottom"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Editorial Column -->
+          <div class="hero-copy-column">
+            <div class="hero-designation-pill">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span id="hero-designation-text">BUSINESS ANALYST | DATA ANALYST</span>
+            </div>
+
+            <h1 id="hero-name-heading" class="hero-name-oversized">
+              <span id="hero-first-name">OMKAR</span> <span id="hero-last-name" class="accent-stroke">MALGI</span>
+            </h1>
+
+            <p id="hero-headline-text" class="hero-headline">
+              TURNING DATA INTO BUSINESS DECISIONS.
+            </p>
+
+            <p id="hero-supporting-text" class="hero-supporting">
+              Transforming complex data into meaningful insights, solving business problems and building analytical solutions that support smarter decisions.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                <span>View My Work</span>
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+
+              <a href="#contact" class="btn btn-teal">
+                <span>Let's Connect</span>
+              </a>
+
+              <!-- Resume Button (Visible & Disabled until revised PDF is enabled in js/content.js) -->
+              <button type="button" class="btn btn-locked resume-action-btn" aria-label="Download Resume (Resume Coming Soon)" aria-disabled="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Download Resume</span>
+                <span class="lock-badge">RESUME COMING SOON</span>
+              </button>
+            </div>
+
+            <div class="hero-social-bar">
+              <a id="hero-linkedin-link" href="https://www.linkedin.com/in/omkarmalgi/" target="_blank" rel="noopener noreferrer" class="social-link linkedin-profile-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                <span>LinkedIn Profile</span>
+              </a>
+
+              <a id="hero-github-link" href="https://github.com/omkarmalgi/" target="_blank" rel="noopener noreferrer" class="social-link github-profile-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                <span>GitHub Portfolio</span>
+              </a>
+
+              <span id="hero-location-tag" class="hero-location-tag">PUNE, MAHARASHTRA, INDIA</span>
+            </div>
+          </div>
+
+          <!-- Right Seamless Blended Portrait Column (Uses exact supplied assets/images/omkar-profile.png) -->
+          <div class="hero-portrait-column">
+            <div class="portrait-blend-stage">
+              <img id="hero-portrait-img" class="hero-portrait-img" src="assets/images/omkar-profile.png" alt="Portrait of Omkar Malgi, Business Analyst and Data Analyst" width="1087" height="1447">
+            </div>
+
+            <div id="hero-telemetry-dock" class="portrait-telemetry-dock tilt-card-3d">
+              <div class="telemetry-cell">
+                <span class="telemetry-label">EXPERIENCE</span>
+                <span class="telemetry-val tabular-nums">3+ Years Finance &amp; Ops</span>
+              </div>
+              <div class="telemetry-cell">
+                <span class="telemetry-label">CORE STACK</span>
+                <span class="telemetry-val">SQL &bull; Excel &bull; Tableau &bull; BRD</span>
+              </div>
+              <div class="telemetry-cell">
+                <span class="telemetry-label">CURRENT ROLE</span>
+                <span class="telemetry-val">BA Fellow @ NextLeap</span>
+              </div>
+              <div class="telemetry-cell">
+                <span class="telemetry-label">LOCATION</span>
+                <span class="telemetry-val">Pune, Maharashtra, IN</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to About Me">
+        <span>Explore Portfolio</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </a>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 02 — ABOUT ME (PROFESSIONAL OVERVIEW)
+         ====================================================================== -->
+    <section id="about" class="section-alt">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="mono-label">SECTION 02 // ABOUT ME</span>
+          <h2 class="section-title">Bridging Financial Operations, Business Analysis &amp; Data Intelligence</h2>
+        </div>
+
+        <div class="overview-grid">
+          <div class="overview-narrative reveal-on-scroll">
+            <blockquote id="about-positioning-quote" class="editorial-quote">
+              "An analytical professional combining financial services experience, business analysis methodologies, data analysis and technical problem-solving."
+            </blockquote>
+
+            <p id="about-bio-p1">
+              Based in <strong>Pune, Maharashtra, India</strong>, I bring <strong>3+ years of experience</strong> across financial services, business operations, and process improvement. My work centres on structuring ambiguous operational problems into measurable KPIs, validating multi-table datasets, and delivering clear, evidence-based recommendations for business stakeholders.
+            </p>
+
+            <p id="about-bio-p2">
+              As a <strong>Business Analyst Fellow at NextLeap</strong> and former <strong>Associate Financial Analyst at XL Dynamics India Pvt. Ltd.</strong> (following an engineering operations internship at <strong>Air India Limited</strong>), I combine US mortgage credit underwriting and regulatory compliance discipline with structured Business Requirement Documents (BRDs), SQL and PostgreSQL querying, Microsoft Excel modelling, and Tableau dashboard development.
+            </p>
+
+            <div id="about-fact-sheet-grid" class="fact-sheet-grid">
+              <div class="fact-box tilt-card-3d">
+                <div class="fact-box-label">Name &amp; Location</div>
+                <div class="fact-box-value">Omkar Malgi &mdash; Pune, India</div>
+              </div>
+              <div class="fact-box tilt-card-3d">
+                <div class="fact-box-label">Industry Experience</div>
+                <div class="fact-box-value tabular-nums">3+ Years (Financial Services &amp; Ops)</div>
+              </div>
+              <div class="fact-box tilt-card-3d">
+                <div class="fact-box-label">Current Fellowship</div>
+                <div class="fact-box-value">Business Analyst Fellow, NextLeap</div>
+              </div>
+              <div class="fact-box tilt-card-3d">
+                <div class="fact-box-label">Prior Corporate Role</div>
+                <div class="fact-box-value">Associate Financial Analyst, XL Dynamics</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pillars-panel tilt-card-3d reveal-on-scroll">
+            <div class="pillars-panel-title">CORE ANALYTICAL &amp; OPERATIONAL CAPABILITIES</div>
+            <div id="about-pillars-grid" class="pillars-grid">
+              <div class="pillar-chip">
+                <span class="pillar-index">01</span>
+                <span class="pillar-name">Business Analysis</span>
+              </div>
+              <div class="pillar-chip">
+                <span class="pillar-index">02</span>
+                <span class="pillar-name">Requirements Gathering</span>
+              </div>
+              <div class="pillar-chip">
+                <span class="pillar-index">03</span>
+                <span class="pillar-name">Business Requirement Documents</span>
+              </div>
+              <div class="pillar-chip">
+                <span class="pillar-index">04</span>
+                <span class="pillar-name">KPI Analysis</span>
+              </div>
+              <div class="pillar-chip">
+                <span class="pillar-index">05</span>
+                <span class="pillar-name">Stakeholder Communication</span>
+              </div>
+              <div class="pillar-chip">
+                <span class="pillar-index">06</span>
+                <span class="pillar-name">Financial &amp; Credit Analysis</span>
+              </div>
+              <div class="pillar-chip">
+                <span class="pillar-index">07</span>
+                <span class="pillar-name">Operational Reporting</span>
+              </div>
+              <div class="pillar-chip">
+                <span class="pillar-index">08</span>
+                <span class="pillar-name">Root Cause Analysis</span>
+              </div>
+              <div class="pillar-chip">
+                <span class="pillar-index">09</span>
+                <span class="pillar-name">Process Optimisation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 03 — ANALYTICAL SKILLS COMMAND CENTRE
+         ====================================================================== -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="mono-label">SECTION 03 // ANALYTICAL SKILLS</span>
+          <h2 class="section-title">Analytical Skills Command Centre</h2>
+          <p class="section-subtitle">
+            Structured across business analysis methodology, SQL &amp; PostgreSQL data analytics, financial domain expertise, and reporting platforms without arbitrary proficiency percentages.
+          </p>
+        </div>
+
+        <div class="skills-filter-bar reveal-on-scroll" role="toolbar" aria-label="Filter skill categories">
+          <button type="button" class="filter-btn skill-filter-btn active" data-skill-filter="all">All Categories (4)</button>
+          <button type="button" class="filter-btn skill-filter-btn" data-skill-filter="ba">Business Analysis</button>
+          <button type="button" class="filter-btn skill-filter-btn" data-skill-filter="da">Data Analytics</button>
+          <button type="button" class="filter-btn skill-filter-btn" data-skill-filter="domain">Domain Expertise</button>
+          <button type="button" class="filter-btn skill-filter-btn" data-skill-filter="tools">Tools &amp; Platforms</button>
+        </div>
+
+        <div id="skills-command-grid" class="skills-command-grid">
+          <!-- Category 1: Business Analysis -->
+          <article class="skill-category-card tilt-card-3d reveal-on-scroll" data-skill-cat="ba">
+            <div class="skill-cat-header">
+              <h3 class="skill-cat-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00C9B1" stroke-width="2" aria-hidden="true">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                </svg>
+                <span>Business Analysis</span>
+              </h3>
+              <span class="skill-cat-badge">6 CAPABILITIES</span>
+            </div>
+            <ul class="skill-items-list">
+              <li class="skill-node"><span class="skill-node-dot"></span><span>Business Analysis</span></li>
+              <li class="skill-node"><span class="skill-node-dot"></span><span>Requirements Gathering</span></li>
+              <li class="skill-node"><span class="skill-node-dot"></span><span>Business Requirement Documents (BRD)</span></li>
+              <li class="skill-node"><span class="skill-node-dot"></span><span>KPI Analysis</span></li>
+              <li class="skill-node"><span class="skill-node-dot"></span><span>Stakeholder Communication</span></li>
+              <li class="skill-node"><span class="skill-node-dot"></span><span>Business Process Analysis</span></li>
+            </ul>
+          </article>
+
+          <!-- Category 2: Data Analytics -->
+          <article class="skill-category-card tilt-card-3d reveal-on-scroll" data-skill-cat="da">
+            <div class="skill-cat-header">
+              <h3 class="skill-cat-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2585E8" stroke-width="2" aria-hidden="true">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+                <span>Data Analytics</span>
+              </h3>
+              <span class="skill-cat-badge">7 CAPABILITIES</span>
+            </div>
+            <ul class="skill-items-list">
+              <li class="skill-node"><span class="skill-node-dot"></span><span>SQL</span></li>
+              <li class="skill-node"><span class="skill-node-dot"></span><span>PostgreSQL</span></li>
+              <li class="skill-node"><span class="skill-node-dot"></span><span>Microsoft Excel</span></li>
+              <li class="skill-node"><span class="skill-node-dot"></span><span>Tableau</span></li>
+              <li class="skill-node"><span class="skill-node-dot"></span><span>Data Analysis</span></li>
+              <li class="skill-node"><span class="skill-node-dot"></span><span>Data Visualisation</span></li>
+              <li class="skill-node"><span class="skill-node-dot"></span><span>Exploratory Data Analysis</span></li>
+            </ul>
+          </article>
+
+          <!-- Category 3: Domain Expertise -->
+          <article class="skill-category-card tilt-card-3d reveal-on-scroll" data-skill-cat="domain">
+            <div class="skill-cat-header">
+              <h3 class="skill-cat-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8B72D9" stroke-width="2" aria-hidden="true">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+                <span>Domain Expertise</span>
+              </h3>
+              <span class="skill-cat-badge">6 CAPABILITIES</span>
+            </div>
+            <ul class="skill-items-list">
+              <li class="skill-node"><span class="skill-node-dot"></span><span>Credit Analysis</span></li>
+              <li class="skill-node"><span class="skill-node-dot"></span><span>Risk Assessment</span></li>
+              <li class="skill-node"><span class="skill-node-dot"></span><span>US Mortgage Underwriting</span></li>
+              <li class="skill-node"><span class="skill-node-dot"></span><span>FNMA/FHLMC</span></li>
+              <li class="skill-node"><span class="skill-node-dot"></span><span>Banking Regulations</span></li>
+              <li class="skill-node"><span class="skill-node-dot"></span><span>Process Optimisation</span></li>
+            </ul>
+          </article>
+
+          <!-- Category 4: Tools -->
+          <article class="skill-category-card tilt-card-3d reveal-on-scroll" data-skill-cat="tools">
+            <div class="skill-cat-header">
+              <h3 class="skill-cat-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00C9B1" stroke-width="2" aria-hidden="true">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+                <span>Tools</span>
+              </h3>
+              <span class="skill-cat-badge">5 PLATFORMS</span>
+            </div>
+            <ul class="skill-items-list">
+              <li class="skill-node"><span class="skill-node-dot"></span><span>PostgreSQL</span></li>
+              <li class="skill-node"><span class="skill-node-dot"></span><span>Microsoft Excel</span></li>
+              <li class="skill-node"><span class="skill-node-dot"></span><span>Tableau</span></li>
+              <li class="skill-node"><span class="skill-node-dot"></span><span>GitHub</span></li>
+              <li class="skill-node"><span class="skill-node-dot"></span><span>AI-assisted productivity tools</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 04 — FEATURED BUSINESS ANALYTICS PROJECTS
+         ====================================================================== -->
+    <section id="projects" class="section-alt">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="mono-label">SECTION 04 // FEATURED PROJECTS</span>
+          <h2 class="section-title">Featured Business Analytics &amp; Decision Intelligence Projects</h2>
+          <p class="section-subtitle">
+            Led by the flagship Getir Quick-Commerce Returns Investigation and supported by seven specialized projects across web traffic telemetry, fraud &amp; credit risk, PostgreSQL strategy, product BRDs, market sizing, and customer service retention.
+          </p>
+        </div>
+
+        <!-- ==================================================================
+             PROJECT 01: GETIR RETURNS ANALYSIS — FEATURED GRADUATION PROJECT
+             Verified against NL_Getir.pdf Report & Actual Tableau Dashboard
+             ================================================================== -->
+        <article id="project-01-getir" class="featured-project-shell reveal-on-scroll" aria-label="Featured Project 01: Getir Returns Analysis">
+          <div class="featured-top-ribbon">
+            <span id="getir-badge-text" class="featured-badge">PROJECT 01 // FEATURED GRADUATION PROJECT</span>
+            <span class="dataset-disclaimer-pill">Project Period: <strong class="getir-period-text">JANUARY 2021 &ndash; JUNE 2026</strong> &bull; Dataset Analysis Results</span>
+          </div>
+
+          <h3 id="getir-title-text" class="featured-title">Getir Returns Analysis &mdash; Quick-Commerce Operational Investigation</h3>
+          <p id="getir-scope-line" class="featured-scope-line">
+            30,271 Order-Product Records &bull; 30 Columns &bull; 10,000 Unique Orders &bull; 1,000 Customers &bull; 100 SKUs &bull; 10 Product Categories &bull; 5 Operating Regions (10 Cities in Turkey)
+          </p>
+
+          <div class="period-distinction-bar">
+            <span class="period-pill"><strong>PROJECT &amp; REPORTING PERIOD:</strong> <span class="getir-period-text">JANUARY 2021 &ndash; JUNE 2026</span></span>
+            <span class="period-pill"><strong>DATASET ORDER-DATE COVERAGE:</strong> <span id="getir-dataset-coverage-text">January 1, 2021 &ndash; June 1, 2026 (01 Jan 2021 &ndash; 01 Jun 2026)</span></span>
+            <span class="period-pill"><strong>METRIC PRECISION:</strong> <span id="getir-metric-precision-text">1,125 &divide; 1,424 = 79.00% (79.0028%) &bull; 1,424 &divide; 30,271 = 4.70% (4.7042%) &bull; 1,125 &divide; 30,271 = 3.72% (3.7164%)</span></span>
+          </div>
+
+          <div id="getir-tools-list" class="tool-pills" style="margin-bottom: 20px;">
+            <span class="tool-pill">Microsoft Excel</span>
+            <span class="tool-pill">Tableau</span>
+            <span class="tool-pill">Data Cleaning (5 Stages)</span>
+            <span class="tool-pill">Hypothesis Testing (H1&ndash;H8)</span>
+            <span class="tool-pill">14-Metric KPI Framework</span>
+          </div>
+
+          <div class="business-question-banner">
+            <span class="bq-label">PRIMARY BUSINESS QUESTION</span>
+            <p id="getir-bq-text" class="bq-text">"How can a quick-commerce business identify preventable product returns and improve operational efficiency?"</p>
+          </div>
+
+          <!-- Getir Verified Headline KPI Ribbon (Matches Tableau Dashboard & Report Exactly) -->
+          <div id="getir-kpi-grid" class="getir-kpi-grid">
+            <div class="kpi-metric-card" data-tooltip="30,271 consolidated order-product records (OrderID + ProductID) across 10,000 unique orders from January 2021 to June 2026">
+              <span class="kpi-label">Total Records</span>
+              <span class="kpi-number kpi-counter" data-target="30271" data-decimals="0">30,271</span>
+              <span class="kpi-sub">10,000 Orders &bull; 30 Columns</span>
+            </div>
+
+            <div class="kpi-metric-card" data-tooltip="Diagnostic KPI: 1,424 returned order-product records ÷ 30,271 total records = 4.70%">
+              <span class="kpi-label">Total Return Rate</span>
+              <span class="kpi-number kpi-counter" data-target="4.70" data-decimals="2" data-suffix="%">4.70%</span>
+              <span class="kpi-sub">1,424 Returned Records</span>
+            </div>
+
+            <div class="kpi-metric-card kpi-teal" data-tooltip="Primary KPI: 1,125 potentially avoidable returns ÷ 30,271 total records = 3.72%">
+              <span class="kpi-label">Avoidable Return Rate</span>
+              <span class="kpi-number kpi-counter" data-target="3.72" data-decimals="2" data-suffix="%">3.72%</span>
+              <span class="kpi-sub">Primary KPI &bull; 1,125 Avoidable</span>
+            </div>
+
+            <div class="kpi-metric-card kpi-teal" data-tooltip="Secondary KPI: 1,125 potentially avoidable returns ÷ 1,424 total returns = 79.00% (vs. 299 'Customer Changed Mind' at 21.00%)">
+              <span class="kpi-label">Avoidable Share</span>
+              <span class="kpi-number kpi-counter" data-target="79.00" data-decimals="2" data-suffix="%">79.00%</span>
+              <span class="kpi-sub">1,125 of 1,424 Returns</span>
+            </div>
+
+            <div class="kpi-metric-card kpi-purple" data-tooltip="Secondary KPI: Average Cost to Business (Unit Cost × Quantity) per returned record is ₹16.89; Total Avoidable Return Value (Price Paid) = ₹26,962.47">
+              <span class="kpi-label">Avg Cost Returned</span>
+              <span class="kpi-number kpi-counter" data-target="16.89" data-decimals="2" data-prefix="₹">₹16.89</span>
+              <span class="kpi-sub">₹26,962.47 Avoidable Value</span>
+            </div>
+          </div>
+
+          <!-- ACTUAL SUPPLIED TABLEAU DASHBOARD SCREENSHOT WITH CLICK-TO-ENLARGE LIGHTBOX -->
+          <div class="tableau-showcase-frame">
+            <div class="tableau-showcase-topbar">
+              <div class="tableau-showcase-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00C9B1" stroke-width="2" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="3" y1="9" x2="21" y2="9"></line>
+                  <line x1="9" y1="21" x2="9" y2="9"></line>
+                </svg>
+                <span><span id="getir-dashboard-topbar-label">TABLEAU DASHBOARD SCREENSHOT // getir | RETURNS ANALYSIS</span> (<span class="getir-period-text">JANUARY 2021 – JUNE 2026</span>)</span>
+              </div>
+
+              <div class="tableau-showcase-controls">
+                <button type="button" id="getir-zoom-trigger-btn" class="zoom-trigger-btn"
+                  data-lightbox-src="assets/images/getir-tableau-dashboard.jpg"
+                  data-lightbox-caption="Tableau Dashboard Screenshot ('getir | RETURNS ANALYSIS') — Reporting Period: January 2021 – June 2026. Full-screen preview of the 5-card KPI ribbon (30,271 records; 4.70% Total Return Rate; 3.72% Avoidable Return Rate; 79.00% Avoidable Share; ₹16.89 Avg Cost Returned), category rates, top 10 avoidable reasons, order time bands, discount ranges, regional map, age cohorts, and 5×5 correlation heatmap.">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                  <span>Enlarge Dashboard Screenshot</span>
+                </button>
+
+                <!-- Automatically shown only when tableauPublicUrl is populated in js/content.js -->
+                <a id="getir-live-tableau-btn" href="https://public.tableau.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="display: none; padding: 7px 14px; font-size: 0.78rem;">
+                  <span>OPEN LIVE TABLEAU PUBLIC DASHBOARD</span>
+                </a>
+              </div>
+            </div>
+
+            <button type="button" id="getir-dashboard-img-btn" class="tableau-image-button"
+              data-lightbox-src="assets/images/getir-tableau-dashboard.jpg"
+              data-lightbox-caption="Tableau Dashboard Screenshot ('getir | RETURNS ANALYSIS') — Reporting Period: January 2021 – June 2026."
+              aria-label="Click to enlarge Getir Returns Analysis Tableau Dashboard Screenshot">
+              <img id="getir-dashboard-img" src="assets/images/getir-tableau-dashboard.jpg" alt="Getir Returns Analysis Tableau Dashboard Screenshot showing 30,271 total records, 4.70% total return rate, 3.72% avoidable return rate, 79.00% avoidable share, and ₹16.89 average cost returned" width="1024" height="681" decoding="async">
+              <span class="tableau-zoom-overlay-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00C9B1" stroke-width="2.2" aria-hidden="true">
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <polyline points="9 21 3 21 3 15"></polyline>
+                  <line x1="21" y1="3" x2="14" y2="10"></line>
+                  <line x1="3" y1="21" x2="10" y2="14"></line>
+                </svg>
+                <span>Tableau Dashboard Preview &bull; Click to Enlarge</span>
+              </span>
+            </button>
+
+            <p id="getir-dashboard-caption" class="tableau-caption">
+              <strong>Tableau Dashboard Screenshot ('getir | RETURNS ANALYSIS'):</strong> Static preview of the completed Tableau dashboard deliverable (click image or button above to inspect in full-screen lightbox). Integrates the 5-card executive KPI ribbon (30,271 records, 4.70% Total Return Rate, 3.72% Avoidable Return Rate, 79.00% Avoidable Share, ₹16.89 Avg Cost Returned), Avoidable Return Rate by Product Category, Top 10 Avoidable Return Reasons donut, Order Time Band dual-line chart, Discount Range bar-line combo, Turkey Regional Return Insights map, Customer Age Group dot plot, and 5&times;5 Pearson Correlation Heatmap.
+            </p>
+          </div>
+
+          <!-- Getir Interactive Analytical Breakdown Panels (Verified Report Figures) -->
+          <div class="getir-dashboard-workbench">
+            <!-- Left Panel: Return Classification Donut & Top Return Drivers -->
+            <div class="bi-panel">
+              <div class="bi-panel-header">
+                <span class="bi-panel-title">Return Classification &amp; Leading Drivers (n = 1,424)</span>
+                <span class="bi-panel-tag">79.00% AVOIDABLE SHARE</span>
+              </div>
+
+              <div class="donut-layout">
+                <div class="donut-svg-wrap">
+                  <!-- Circle r=65, circumference = 408.41; 79.00% = 322.64, 21.00% = 85.77 -->
+                  <svg viewBox="0 0 180 180" width="176" height="176" role="img" aria-label="Donut chart showing 79.00% potentially avoidable returns (1,125) and 21.00% Customer Changed Mind returns (299)">
+                    <circle cx="90" cy="90" r="65" fill="none" stroke="#16304D" stroke-width="20"></circle>
+                    <circle class="donut-segment" cx="90" cy="90" r="65" fill="none" stroke="#00C9B1" stroke-width="20"
+                      stroke-dasharray="322.64 408.41" stroke-dashoffset="0" transform="rotate(-90 90 90)"
+                      data-tooltip="Potentially Avoidable Returns: 1,125 records (79.00% of returns; 3.72% of all 30,271 records)"></circle>
+                    <circle class="donut-segment" cx="90" cy="90" r="65" fill="none" stroke="#8B72D9" stroke-width="20"
+                      stroke-dasharray="85.77 408.41" stroke-dashoffset="-322.64" transform="rotate(-90 90 90)"
+                      data-tooltip="Customer Changed Mind (Non-Avoidable): 299 records (21.00% of returns; 0.99% of all records)"></circle>
+                    <text x="90" y="84" text-anchor="middle" fill="#F3F6FC" font-family="Arial Black, sans-serif" font-size="19" font-weight="900">1,125</text>
+                    <text x="90" y="104" text-anchor="middle" fill="#00C9B1" font-family="Consolas, monospace" font-size="10">79.00% AVOIDABLE</text>
+                  </svg>
+                </div>
+
+                <div class="donut-legend">
+                  <div class="legend-item" data-tooltip="Rule: IsReturned = 1 AND ReturnReason ≠ 'Customer Changed Mind' (1,125 records across 28 reasons)">
+                    <span class="legend-left">
+                      <span class="legend-swatch" style="background: #00C9B1;"></span>
+                      <span>Potentially Avoidable</span>
+                    </span>
+                    <span class="legend-right tabular-nums">1,125 (79.00%)</span>
+                  </div>
+                  <div class="legend-item" data-tooltip="Non-avoidable customer preference returns: 299 records (21.00% of 1,424 returns)">
+                    <span class="legend-left">
+                      <span class="legend-swatch" style="background: #8B72D9;"></span>
+                      <span>Customer Changed Mind</span>
+                    </span>
+                    <span class="legend-right tabular-nums">299 (21.00%)</span>
+                  </div>
+                  <div class="legend-item" data-tooltip="#1 Avoidable Driver: Expired Date (156 returns; 13.87% of avoidable returns)">
+                    <span class="legend-left">
+                      <span class="legend-swatch" style="background: #2585E8;"></span>
+                      <span>#1 Driver: Expired Date</span>
+                    </span>
+                    <span class="legend-right tabular-nums">156 (13.87%)</span>
+                  </div>
+                  <div class="legend-item" data-tooltip="All 3 picking errors combined: Wrong Item Sent (114; 10.13%) + Wrong Product Sent (68; 6.04%) + Wrong Flavor Sent (67; 5.96%) = 249 returns (22.13%)">
+                    <span class="legend-left">
+                      <span class="legend-swatch" style="background: #FF424D;"></span>
+                      <span>All Picking Errors Combined</span>
+                    </span>
+                    <span class="legend-right tabular-nums">249 (22.13%)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Panel: Avoidable Return Rate by Product Category (All 10 Categories Verified from Report) -->
+            <div class="bi-panel">
+              <div class="bi-panel-header">
+                <span class="bi-panel-title">Avoidable Return Rate by Category (vs. 3.72% Benchmark)</span>
+                <span class="bi-panel-tag">H1 SUPPORTED (2.66&times; SPREAD)</span>
+              </div>
+
+              <div class="category-bars-list">
+                <div class="cat-bar-row" data-tooltip="Household Cleaning: 157 avoidable / 2,849 records = 5.51% (Overall: 6.67%; +1.79 pp vs. 3.72% benchmark)">
+                  <span class="cat-bar-name">Household Cleaning</span>
+                  <div class="cat-bar-track"><div class="cat-bar-fill" style="width: 100%;"></div></div>
+                  <span class="cat-bar-val tabular-nums">5.51%</span>
+                </div>
+                <div class="cat-bar-row" data-tooltip="Bakery: 102 avoidable / 2,094 records = 4.87% (Overall: 6.30%; +1.15 pp)">
+                  <span class="cat-bar-name">Bakery</span>
+                  <div class="cat-bar-track"><div class="cat-bar-fill" style="width: 88.4%;"></div></div>
+                  <span class="cat-bar-val tabular-nums">4.87%</span>
+                </div>
+                <div class="cat-bar-row" data-tooltip="Beverages: 154 avoidable / 3,314 records = 4.65% (Overall: 6.10%; +0.93 pp)">
+                  <span class="cat-bar-name">Beverages</span>
+                  <div class="cat-bar-track"><div class="cat-bar-fill" style="width: 84.4%;"></div></div>
+                  <span class="cat-bar-val tabular-nums">4.65%</span>
+                </div>
+                <div class="cat-bar-row" data-tooltip="Pantry Staples: 122 avoidable / 2,659 records = 4.59% (Overall: 6.05%; +0.87 pp)">
+                  <span class="cat-bar-name">Pantry Staples</span>
+                  <div class="cat-bar-track"><div class="cat-bar-fill" style="width: 83.3%;"></div></div>
+                  <span class="cat-bar-val tabular-nums">4.59%</span>
+                </div>
+                <div class="cat-bar-row" data-tooltip="Frozen Foods: 67 avoidable / 1,477 records = 4.54% (Overall: 5.69%; +0.82 pp)">
+                  <span class="cat-bar-name">Frozen Foods</span>
+                  <div class="cat-bar-track"><div class="cat-bar-fill" style="width: 82.4%;"></div></div>
+                  <span class="cat-bar-val tabular-nums">4.54%</span>
+                </div>
+                <div class="cat-bar-row" data-tooltip="Snacks: 138 avoidable / 3,212 records = 4.30% (Overall: 5.20%; +0.58 pp)">
+                  <span class="cat-bar-name">Snacks</span>
+                  <div class="cat-bar-track"><div class="cat-bar-fill" style="width: 78.0%;"></div></div>
+                  <span class="cat-bar-val tabular-nums">4.30%</span>
+                </div>
+                <div class="cat-bar-row" data-tooltip="Personal Care: 119 avoidable / 2,782 records = 4.28% (Overall: 5.32%; +0.56 pp)">
+                  <span class="cat-bar-name">Personal Care</span>
+                  <div class="cat-bar-track"><div class="cat-bar-fill" style="width: 77.7%;"></div></div>
+                  <span class="cat-bar-val tabular-nums">4.28%</span>
+                </div>
+                <div class="cat-bar-row" data-tooltip="Meat & Poultry: 93 avoidable / 3,860 records = 2.41% (Overall: 2.80%; -1.31 pp)">
+                  <span class="cat-bar-name">Meat &amp; Poultry</span>
+                  <div class="cat-bar-track"><div class="cat-bar-fill" style="width: 43.7%;"></div></div>
+                  <span class="cat-bar-val tabular-nums">2.41%</span>
+                </div>
+                <div class="cat-bar-row" data-tooltip="Dairy & Eggs: 91 avoidable / 4,062 records = 2.24% (Overall: 2.78%; -1.48 pp)">
+                  <span class="cat-bar-name">Dairy &amp; Eggs</span>
+                  <div class="cat-bar-track"><div class="cat-bar-fill" style="width: 40.7%;"></div></div>
+                  <span class="cat-bar-val tabular-nums">2.24%</span>
+                </div>
+                <div class="cat-bar-row" data-tooltip="Produce: 82 avoidable / 3,962 records = 2.07% (Overall: 3.00%; -1.65 pp Lowest)">
+                  <span class="cat-bar-name">Produce</span>
+                  <div class="cat-bar-track"><div class="cat-bar-fill" style="width: 37.6%;"></div></div>
+                  <span class="cat-bar-val tabular-nums">2.07%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Action Bar for Getir Project -->
+          <div class="project-card-actions">
+            <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+              <button type="button" class="btn btn-teal case-toggle-btn" data-target-drawer="drawer-getir" aria-expanded="true">
+                <span class="toggle-btn-label">Collapse Case Study</span>
+              </button>
+              <a id="getir-github-btn" href="https://github.com/omkarmalgi/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary github-profile-link">
+                <span>GitHub Profile</span>
+              </a>
+            </div>
+            <span class="mono-label">REPORTING PERIOD: <span class="getir-period-text">JANUARY 2021 – JUNE 2026</span></span>
+          </div>
+
+          <!-- Expandable Comprehensive Case Study Drawer (Verified from NL_Getir.pdf) -->
+          <div id="drawer-getir" class="case-study-drawer open">
+            <div class="case-study-columns">
+              <div class="cs-block">
+                <h4>01 // Business Problem &amp; Project Objective</h4>
+                <p id="getir-cs-problem">
+                  Product returns and refund expenses create operational and margin pressure across quick-commerce fulfilment. Before modifying customer return policies—which risks penalising loyal customers—this investigation evaluates <strong>30,271 order-product records</strong> across <strong>10,000 unique orders, 1,000 customers, 100 products, 10 product categories, and 5 operating regions (10 cities) in Turkey from <span class="getir-period-text">January 2021 – June 2026</span></strong> to quantify potentially avoidable returns and determine where operational improvements should be prioritised.
+                </p>
+              </div>
+
+              <div class="cs-block">
+                <h4>02 // Relational Dataset Architecture (5 Tables &rarr; 30 Columns)</h4>
+                <p id="getir-cs-architecture">
+                  Merged 5 relational tables totaling 26 source columns on 4 shared join keys (<code>OrderID</code>, <code>CustomerID</code>, <code>ProductID</code>, <code>CategoryID</code>): <strong>Order Details</strong> (30,271 rows, 10 cols), <strong>Orders</strong> (10,000 rows, 4 cols), <strong>Customers</strong> (1,000 rows, 7 cols), <strong>Products</strong> (100 rows, 3 cols), and <strong>Categories</strong> (10 rows, 2 cols). Removing 4 repeated join keys left <strong>22 distinct base attributes</strong>, which combined with <strong>1 duplicate-validation field (<code>Dupl</code>)</strong> and <strong>7 derived analytical fields</strong> formed the final 30-column dataset.
+                </p>
+              </div>
+
+              <div class="cs-block">
+                <h4>03 // 5-Stage Data Cleaning &amp; Preparation Methodology</h4>
+                <ul id="getir-cs-cleaning">
+                  <li><strong>Stage 1 &mdash; Relational Consolidation:</strong> Joined all 5 tables across 30,271 order-product line items.</li>
+                  <li><strong>Stage 2 &mdash; Duplicate &amp; Type Validation:</strong> Verified composite key (<code>OrderID + ProductID</code>) via <code>Dupl</code>; all 30,271 rows verified unique.</li>
+                  <li><strong>Stage 3 &mdash; Potentially Avoidable Classification:</strong> Assigned binary <code>Avoidable = 1</code> where <code>IsReturned = 1 AND ReturnReason &ne; 'Customer Changed Mind'</code> (1,125 avoidable vs. 299 changed-mind returns).</li>
+                  <li><strong>Stage 4 &mdash; Financial Value &amp; Cost Derivation:</strong> Calculated net customer spend <code>Price Paid = Unit Price &times; Quantity &times; (1 &minus; Discount Rate)</code> (₹26,962.47 avoidable return value) and <code>Cost to Business = Unit Cost &times; Quantity</code> (₹16.89 mean per returned record vs. 18.18 across all records).</li>
+                  <li><strong>Stage 5 &mdash; Analytical Banding:</strong> Engineered <code>PaidPriceCat</code> (5 equal quintiles ~6,054 rows each), <code>Discount Range</code> (7 bands: 0% to Above 25%), <code>Order Time Band</code> (4 active windows: Morning, Afternoon, Evening, Late Night), and <code>Customer Age Group</code> (5 brackets: Under 25 to 55+).</li>
+                </ul>
+              </div>
+
+              <div class="cs-block">
+                <h4>04 // 14-Metric KPI Hierarchy &amp; Hypothesis Scorecard (H1&ndash;H8)</h4>
+                <ul id="getir-cs-kpis">
+                  <li><strong>Primary KPI:</strong> Avoidable Return Rate = <strong>3.72%</strong> (1,125 &divide; 30,271).</li>
+                  <li><strong>Secondary KPIs:</strong> Avoidable Share of Returns = <strong>79.00%</strong> (1,125 &divide; 1,424); Avoidable Return Value = <strong>₹26,962.47</strong>; Average Cost per Returned Record = <strong>₹16.89</strong>.</li>
+                  <li><strong>Diagnostic KPIs:</strong> Overall Return Rate = <strong>4.70%</strong> (1,424 &divide; 30,271) plus 9 subgroup diagnostic rates across category, SKU, region, segment, reason, discount, order time, age group, and price quintile.</li>
+                  <li><strong>Hypothesis Testing (8 Formal Hypotheses):</strong> <strong>5 Supported</strong> (H1 Categories, H2 Return Reasons, H4 Operating Regions, H6 Order Time Bands, H8 Age Groups), <strong>2 Partially Supported</strong> due to non-monotonic patterns (H3 Discount Bands, H7 Paid Price Quintiles), and <strong>1 Not Supported</strong> (H5 Customer Segments: VIP 3.82%, Premium 3.70%, Standard 3.69% &mdash; only 0.13 pp spread).</li>
+                </ul>
+              </div>
+
+              <div class="cs-block">
+                <h4>05 // Key Empirical Findings</h4>
+                <ul id="getir-cs-findings">
+                  <li><strong>Freshness &amp; Picking Dominate Avoidable Returns:</strong> Across 28 avoidable return reasons, <em>Expired Date</em> (#1: 156 returns; <strong>13.87%</strong>) and <em>Wrong Item Sent</em> (#2: 114 returns; <strong>10.13%</strong>) represent <strong>24.00%</strong> of avoidable returns. All three picking errors combined (Wrong Item 114, Wrong Product 68, Wrong Flavor 67) total <strong>249 returns (22.13%)</strong>, followed by Packaging Defect (65; 5.78%) and Packaging Damage (48; 4.27%).</li>
+                  <li><strong>Category &amp; Timing Hotspots:</strong> Household Cleaning (<strong>5.51%</strong>), Bakery (<strong>4.87%</strong>), and Beverages (<strong>4.65%</strong>) record the highest avoidable rates, while Late Night (9 PM&ndash;12 AM) peaks at <strong>4.32% avoidable (5.28% overall)</strong>.</li>
+                  <li><strong>Discount, Regional &amp; Correlation Insights:</strong> Return rates peak in the <strong>21&ndash;25% discount band (5.03% avoidable; 6.24% overall)</strong> and in the <strong>Mediterranean region (4.50% avoidable: Adana 4.61%, Antalya 4.44%)</strong>, while Marmara drives 55.73% of avoidable volume (627 returns). Off-diagonal Pearson correlations are negligible (<code>|r| &le; 0.020</code>), confirming linear discount depth or order hour alone does not establish causation.</li>
+                </ul>
+              </div>
+
+              <div class="cs-block">
+                <h4>06 // Strategic Business Recommendations &amp; Governance</h4>
+                <ul id="getir-cs-recommendations">
+                  <li><strong>Pillar 01 &mdash; Pre-Dispatch Expiry &amp; Packaging Audits (High Priority):</strong> Implement dark-store expiry verification before dispatch to address Expired Date (13.87%) and audit container/seal integrity in Household Cleaning, Bakery, and Beverages.</li>
+                  <li><strong>Pillar 02 &mdash; Picking Accuracy &amp; Late-Shift Review (High/Medium Priority):</strong> Enforce barcode/SKU checks at packing to target the 249 picking errors (22.13%) and review Late Night (9 PM&ndash;12 AM) and Evening dispatch workflows.</li>
+                  <li><strong>Pillar 03 &mdash; 21&ndash;25% Discount SKU Review (Medium Priority):</strong> Audit the specific products and stock condition in the 21&ndash;25% discount band (5.03% avoidable) and Medium price quintile (4.02%) before altering promotional rules.</li>
+                  <li><strong>Pillar 04 &mdash; Preserve Uniform Customer Return Policies:</strong> Because loyalty segments differ by only 0.13 pp (3.69%&ndash;3.82%), do not tighten customer return policies; prioritise operational investigations in Mediterranean and high-volume Marmara while gathering larger sample sizes for Black Sea (258 records; 7 avoidable returns).</li>
+                </ul>
+              </div>
+
+              <div class="cs-block cs-full cs-scope-disclosure">
+                <h4 id="getir-cs-limitations-title">07 // Scope &amp; Methodological Disclosures</h4>
+                <ul id="getir-cs-limitations" class="scope-disclosure-grid">
+                  <li><strong>Project &amp; Reporting Period:</strong> January 2021 &ndash; June 2026 (Dataset <code>OrderDate</code> coverage: January 1, 2021 &ndash; June 1, 2026).</li>
+                  <li><strong>Dataset Scope:</strong> 30,271 consolidated order-product records across 10,000 unique orders, 1,000 customers, 100 SKUs, 10 categories, and 5 regions (10 cities).</li>
+                  <li><strong>Dataset Provenance:</strong> External live operational provenance of the supplied graduation project dataset is unspecified; all metrics reflect structured analysis of the provided relational workbook.</li>
+                  <li><strong>Observational &amp; Inferential Boundaries:</strong> Descriptive subgroup comparisons and Pearson correlations (all off-diagonal <code>|r| &le; 0.020</code>) capture observational patterns and do not establish causation or formal statistical significance.</li>
+                  <li><strong>Subgroup Sample-Size Caution:</strong> Smaller analytical slices&mdash;such as the Black Sea operating region (258 total records; 7 avoidable returns) and narrow discount bands (21&ndash;25%: 577 records)&mdash;require sample-size caution before operational generalisation.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Filter Bar for Projects 02 to 08 -->
+        <div class="skills-filter-bar reveal-on-scroll" role="toolbar" aria-label="Filter projects by tool or discipline">
+          <button type="button" class="filter-btn project-filter-btn active" data-proj-filter="all">All Projects (02&ndash;08)</button>
+          <button type="button" class="filter-btn project-filter-btn" data-proj-filter="sql">SQL &amp; PostgreSQL</button>
+          <button type="button" class="filter-btn project-filter-btn" data-proj-filter="tableau">Tableau Dashboards</button>
+          <button type="button" class="filter-btn project-filter-btn" data-proj-filter="excel">Microsoft Excel</button>
+          <button type="button" class="filter-btn project-filter-btn" data-proj-filter="ba">BRD &amp; Market Strategy</button>
+        </div>
+
+        <!-- Secondary Projects Grid (Projects 02 to 08 — Each with a Distinct Architectural Visual) -->
+        <div class="projects-grid">
+
+          <!-- PROJECT 02: SWIGGY TRAFFIC ANALYSIS DASHBOARD -->
+          <article id="project-02-swiggy" class="project-card tilt-card-3d reveal-on-scroll" data-proj-tags="tableau">
+            <div>
+              <div class="project-top-meta">
+                <span class="project-number">PROJECT 02 // WEB ANALYTICS &amp; BI</span>
+                <div class="tool-pills">
+                  <span class="tool-pill">Tableau</span>
+                  <span class="tool-pill">Data Analysis</span>
+                </div>
+              </div>
+              <h3 class="project-card-title">Swiggy Traffic Analysis Dashboard</h3>
+              <span class="project-period-tag">July &ndash; October (Reporting Window)</span>
+              <p class="project-summary">
+                Multi-dimensional website traffic and acquisition funnel investigation covering July to October, evaluating session volume, conversion efficiency, bounce rates, traffic sources, device split, and landing-page performance.
+              </p>
+
+              <button type="button" class="project-visual-thumb"
+                data-lightbox-src="assets/images/swiggy-traffic-architecture.png"
+                data-lightbox-caption="Project 02: Swiggy Traffic Analysis Dashboard Architecture (July – October)"
+                aria-label="Enlarge Swiggy Traffic Analysis visual schematic">
+                <img class="project-card-img" src="assets/images/swiggy-traffic-architecture.png" alt="Swiggy Traffic Analysis Architecture Schematic" width="1000" height="560">
+                <span class="conceptual-arch-badge">Conceptual Architecture</span>
+              </button>
+
+              <div class="project-schematic-preview">
+                <div class="schematic-header">
+                  <span>ANALYTICAL DIMENSIONS</span>
+                  <span>TABLEAU TELEMETRY</span>
+                </div>
+                <div class="schematic-tags-grid">
+                  <span class="schematic-metric-tag">Sessions</span>
+                  <span class="schematic-metric-tag">Conversion Rate</span>
+                  <span class="schematic-metric-tag">Bounce Rate</span>
+                  <span class="schematic-metric-tag">Avg. Session Duration</span>
+                  <span class="schematic-metric-tag">Traffic Sources</span>
+                  <span class="schematic-metric-tag">Device Distribution</span>
+                  <span class="schematic-metric-tag">Geographical Analysis</span>
+                  <span class="schematic-metric-tag">New vs. Returning Visitors</span>
+                  <span class="schematic-metric-tag">Landing-Page Performance</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="project-card-actions">
+                <button type="button" class="btn btn-secondary case-toggle-btn" data-target-drawer="drawer-p2" aria-expanded="false">
+                  <span class="toggle-btn-label">Expand Full Case Study</span>
+                </button>
+                <a href="https://public.tableau.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary project-live-tableau-link" style="display: none;">
+                  <span>Explore Tableau</span>
+                </a>
+                <a href="https://github.com/omkarmalgi/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary project-live-github-link" style="display: none;">
+                  <span>GitHub Repo</span>
+                </a>
+              </div>
+
+              <div id="drawer-p2" class="case-study-drawer">
+                <div class="cs-block" style="margin-bottom: 12px;">
+                  <h4>Business Problem &amp; Objective</h4>
+                  <p>Evaluated July&ndash;October website traffic to understand how traffic sources, device segments, geographical regions, and landing pages influence conversion rate, bounce rate, and average session duration across new and returning visitors.</p>
+                </div>
+                <div class="cs-block">
+                  <h4>Analytical Methodology &amp; Recommendations</h4>
+                  <p>Built a Tableau dashboard tracking session cohorts, channel conversion efficiency, and high-bounce entry pages to guide landing-page UX optimisation and marketing channel reallocation.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 03: CREDIT CARD FRAUD DETECTION ANALYSIS -->
+          <article id="project-03-fraud" class="project-card tilt-card-3d reveal-on-scroll" data-proj-tags="sql,excel,tableau">
+            <div>
+              <div class="project-top-meta">
+                <span class="project-number">PROJECT 03 // FINANCIAL RISK &amp; FRAUD ANALYTICS</span>
+                <div class="tool-pills">
+                  <span class="tool-pill">SQL</span>
+                  <span class="tool-pill">Excel</span>
+                  <span class="tool-pill">Tableau</span>
+                </div>
+              </div>
+              <h3 class="project-card-title">Credit Card Fraud Detection Analysis</h3>
+              <span class="project-period-tag">Analytical Risk Case Study</span>
+              <p class="project-summary">
+                Financial risk investigation examining fraudulent credit card transaction trends, transaction amount distributions, high-risk anomalies, and rule-based risk-mitigation recommendations.
+              </p>
+
+              <button type="button" class="project-visual-thumb"
+                data-lightbox-src="assets/images/credit-fraud-architecture.png"
+                data-lightbox-caption="Project 03: Credit Card Fraud Detection Analytical Architecture"
+                aria-label="Enlarge Credit Card Fraud Detection visual schematic">
+                <img class="project-card-img" src="assets/images/credit-fraud-architecture.png" alt="Credit Card Fraud Detection Architecture Schematic" width="1000" height="560">
+                <span class="conceptual-arch-badge">Conceptual Architecture</span>
+              </button>
+
+              <div class="project-schematic-preview">
+                <div class="schematic-header">
+                  <span>FRAUD INVESTIGATION MODULES</span>
+                  <span>SQL &bull; EXCEL &bull; TABLEAU</span>
+                </div>
+                <div class="schematic-tags-grid">
+                  <span class="schematic-metric-tag">Fraud Trend Analysis</span>
+                  <span class="schematic-metric-tag">Transaction Distribution</span>
+                  <span class="schematic-metric-tag">Fraud-Related KPIs</span>
+                  <span class="schematic-metric-tag">SQL Analytical Investigation</span>
+                  <span class="schematic-metric-tag">Dashboard Visualisation</span>
+                  <span class="schematic-metric-tag">Risk-Mitigation Rules</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="project-card-actions">
+                <button type="button" class="btn btn-secondary case-toggle-btn" data-target-drawer="drawer-p3" aria-expanded="false">
+                  <span class="toggle-btn-label">Expand Full Case Study</span>
+                </button>
+                <a href="https://public.tableau.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary project-live-tableau-link" style="display: none;">
+                  <span>Explore Tableau</span>
+                </a>
+                <a href="https://github.com/omkarmalgi/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary project-live-github-link" style="display: none;">
+                  <span>GitHub Repo</span>
+                </a>
+              </div>
+
+              <div id="drawer-p3" class="case-study-drawer">
+                <div class="cs-block" style="margin-bottom: 12px;">
+                  <h4>Business Problem &amp; SQL Investigation</h4>
+                  <p>Used SQL filtering, conditional aggregations, and velocity segmentation to profile high-risk transaction buckets while minimizing false positives on legitimate cardholders.</p>
+                </div>
+                <div class="cs-block">
+                  <h4>Dashboard Visualisation &amp; Risk Mitigation</h4>
+                  <p>Validated transaction value distributions in Excel and built Tableau risk monitoring views to recommend step-up verification triggers on anomalous transaction bands.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 04: LOAN APPROVAL ANALYSIS -->
+          <article id="project-04-loan" class="project-card tilt-card-3d reveal-on-scroll" data-proj-tags="sql,excel,tableau">
+            <div>
+              <div class="project-top-meta">
+                <span class="project-number">PROJECT 04 // CREDIT UNDERWRITING ANALYTICS</span>
+                <div class="tool-pills">
+                  <span class="tool-pill">SQL</span>
+                  <span class="tool-pill">Excel</span>
+                  <span class="tool-pill">Tableau</span>
+                </div>
+              </div>
+              <h3 class="project-card-title">Loan Approval Analysis</h3>
+              <span class="project-period-tag">Credit Decisioning Case Study</span>
+              <p class="project-summary">
+                Credit underwriting and lending decision analysis investigating applicant income tiers, credit history impact, demographic segments, approval rates, and lending trends.
+              </p>
+
+              <button type="button" class="project-visual-thumb"
+                data-lightbox-src="assets/images/loan-approval-architecture.png"
+                data-lightbox-caption="Project 04: Loan Approval & Underwriting Analytical Architecture"
+                aria-label="Enlarge Loan Approval Analysis visual schematic">
+                <img class="project-card-img" src="assets/images/loan-approval-architecture.png" alt="Loan Approval Analysis Architecture Schematic" width="1000" height="560">
+                <span class="conceptual-arch-badge">Conceptual Architecture</span>
+              </button>
+
+              <div class="project-schematic-preview">
+                <div class="schematic-header">
+                  <span>UNDERWRITING DIMENSIONS</span>
+                  <span>SQL &bull; EXCEL &bull; TABLEAU</span>
+                </div>
+                <div class="schematic-tags-grid">
+                  <span class="schematic-metric-tag">Loan Approval Analysis</span>
+                  <span class="schematic-metric-tag">Applicant Income Analysis</span>
+                  <span class="schematic-metric-tag">Credit History Impact</span>
+                  <span class="schematic-metric-tag">Demographic Analysis</span>
+                  <span class="schematic-metric-tag">Approval Rate KPIs</span>
+                  <span class="schematic-metric-tag">Lending Recommendations</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="project-card-actions">
+                <button type="button" class="btn btn-secondary case-toggle-btn" data-target-drawer="drawer-p4" aria-expanded="false">
+                  <span class="toggle-btn-label">Expand Full Case Study</span>
+                </button>
+                <a href="https://public.tableau.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary project-live-tableau-link" style="display: none;">
+                  <span>Explore Tableau</span>
+                </a>
+                <a href="https://github.com/omkarmalgi/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary project-live-github-link" style="display: none;">
+                  <span>GitHub Repo</span>
+                </a>
+              </div>
+
+              <div id="drawer-p4" class="case-study-drawer">
+                <div class="cs-block" style="margin-bottom: 12px;">
+                  <h4>Domain Context &amp; Underwriting Scope</h4>
+                  <p>Grounded in practical mortgage credit analysis experience, this project examines how applicant income, credit bureau history, and demographic attributes interact to influence loan approval outcomes.</p>
+                </div>
+                <div class="cs-block">
+                  <h4>Analytical Recommendations</h4>
+                  <p>Formulated tiered credit-screening guidelines combining credit history compliance and income-to-loan thresholds to accelerate prime approvals and standardise manual exception reviews.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 05: AMAZON INDIA STRATEGIC ANALYSIS -->
+          <article id="project-05-amazon" class="project-card tilt-card-3d reveal-on-scroll" data-proj-tags="sql,ba">
+            <div>
+              <div class="project-top-meta">
+                <span class="project-number">PROJECT 05 // ENTERPRISE SQL &amp; E-COMMERCE STRATEGY</span>
+                <div class="tool-pills">
+                  <span class="tool-pill">SQL</span>
+                  <span class="tool-pill">PostgreSQL</span>
+                  <span class="tool-pill">Business Analysis</span>
+                </div>
+              </div>
+              <h3 class="project-card-title">Amazon India Strategic Analysis</h3>
+              <span class="project-period-tag">Strategic PostgreSQL Case Study</span>
+              <p class="project-summary">
+                Relational database investigation of e-commerce sales performance, customer cohorts, product category revenue, and year-over-year growth using advanced PostgreSQL techniques.
+              </p>
+
+              <button type="button" class="project-visual-thumb"
+                data-lightbox-src="assets/images/amazon-india-sql-architecture.png"
+                data-lightbox-caption="Project 05: Amazon India PostgreSQL Analytical Architecture"
+                aria-label="Enlarge Amazon India Strategic Analysis visual schematic">
+                <img class="project-card-img" src="assets/images/amazon-india-sql-architecture.png" alt="Amazon India SQL Architecture Schematic" width="1000" height="560">
+                <span class="conceptual-arch-badge">Conceptual Architecture</span>
+              </button>
+
+              <div class="project-schematic-preview">
+                <div class="schematic-header">
+                  <span>POSTGRESQL ANALYTICAL TECHNIQUES</span>
+                  <span>RELATIONAL ANALYSIS</span>
+                </div>
+                <div class="schematic-tags-grid">
+                  <span class="schematic-metric-tag">Multi-Table Joins</span>
+                  <span class="schematic-metric-tag">Aggregations</span>
+                  <span class="schematic-metric-tag">Common Table Expressions (CTEs)</span>
+                  <span class="schematic-metric-tag">Subqueries</span>
+                  <span class="schematic-metric-tag">Window Functions</span>
+                  <span class="schematic-metric-tag">GROUP BY &amp; HAVING</span>
+                  <span class="schematic-metric-tag">YoY Revenue Growth</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="project-card-actions">
+                <button type="button" class="btn btn-secondary case-toggle-btn" data-target-drawer="drawer-p5" aria-expanded="false">
+                  <span class="toggle-btn-label">Expand Full Case Study</span>
+                </button>
+                <a href="https://github.com/omkarmalgi/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary project-live-github-link" style="display: none;">
+                  <span>GitHub Repo</span>
+                </a>
+              </div>
+
+              <div id="drawer-p5" class="case-study-drawer">
+                <div class="cs-block" style="margin-bottom: 12px;">
+                  <h4>Business Problem &amp; Relational SQL Architecture</h4>
+                  <p>Structured transactional e-commerce tables in PostgreSQL using multi-table INNER/LEFT JOINs, modular CTEs, and HAVING filters to evaluate regional revenue contribution and repeat customer cohorts.</p>
+                </div>
+                <div class="cs-block">
+                  <h4>Window Functions &amp; Commercial Insights</h4>
+                  <p>Applied <code>DENSE_RANK()</code> for Top-N SKU performance within each category and <code>LAG()</code> window functions to quantify year-over-year category growth and seasonal momentum.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 06: SPOTIFY BUSINESS REQUIREMENTS DOCUMENT -->
+          <article id="project-06-spotify-brd" class="project-card tilt-card-3d reveal-on-scroll" data-proj-tags="ba">
+            <div>
+              <div class="project-top-meta">
+                <span class="project-number">PROJECT 06 // PRODUCT &amp; SYSTEMS SPECIFICATION</span>
+                <div class="tool-pills">
+                  <span class="tool-pill">BRD</span>
+                  <span class="tool-pill">Requirements Gathering</span>
+                  <span class="tool-pill">KPI Design</span>
+                </div>
+              </div>
+              <h3 class="project-card-title">Spotify Business Requirements Document</h3>
+              <span class="project-period-tag">Business Analysis Deliverable</span>
+              <p class="project-summary">
+                End-to-end Business Requirements Document translating user engagement challenges into structured stakeholder, functional, and non-functional specifications with measurable product KPIs.
+              </p>
+
+              <button type="button" class="project-visual-thumb"
+                data-lightbox-src="assets/images/spotify-brd-architecture.png"
+                data-lightbox-caption="Project 06: Spotify Business Requirements Document (BRD) Architecture"
+                aria-label="Enlarge Spotify BRD visual schematic">
+                <img class="project-card-img" src="assets/images/spotify-brd-architecture.png" alt="Spotify BRD Architecture Schematic" width="1000" height="560">
+                <span class="conceptual-arch-badge">Conceptual Architecture</span>
+              </button>
+
+              <div class="project-schematic-preview">
+                <div class="schematic-header">
+                  <span>BRD SPECIFICATION COMPONENTS</span>
+                  <span>BUSINESS ANALYSIS</span>
+                </div>
+                <div class="schematic-tags-grid">
+                  <span class="schematic-metric-tag">Business Problem</span>
+                  <span class="schematic-metric-tag">Stakeholder Requirements</span>
+                  <span class="schematic-metric-tag">User Requirements</span>
+                  <span class="schematic-metric-tag">Functional Requirements</span>
+                  <span class="schematic-metric-tag">Non-Functional Requirements</span>
+                  <span class="schematic-metric-tag">KPIs &amp; Success Metrics</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="project-card-actions">
+                <button type="button" class="btn btn-secondary case-toggle-btn" data-target-drawer="drawer-p6" aria-expanded="false">
+                  <span class="toggle-btn-label">Expand Full Case Study</span>
+                </button>
+                <a href="https://github.com/omkarmalgi/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary project-live-github-link" style="display: none;">
+                  <span>View Document</span>
+                </a>
+              </div>
+
+              <div id="drawer-p6" class="case-study-drawer">
+                <div class="cs-block">
+                  <h4>Structured Requirements Methodology</h4>
+                  <p>Defined clear problem statements, stakeholder RACI alignment, user requirements with acceptance criteria, functional workflows, system latency/availability NFRs, and post-launch adoption and retention KPIs.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 07: SPOTIFY MUSIC STREAMING MARKET ANALYSIS — INDIA -->
+          <article id="project-07-spotify-market" class="project-card tilt-card-3d reveal-on-scroll" data-proj-tags="ba">
+            <div>
+              <div class="project-top-meta">
+                <span class="project-number">PROJECT 07 // MARKET SIZING &amp; GROWTH STRATEGY</span>
+                <div class="tool-pills">
+                  <span class="tool-pill">Market Sizing</span>
+                  <span class="tool-pill">TAM Analysis</span>
+                  <span class="tool-pill">Growth Strategy</span>
+                </div>
+              </div>
+              <h3 class="project-card-title">Spotify Music Streaming Market Analysis &ndash; India</h3>
+              <span class="project-period-tag">Strategic Market Analysis</span>
+              <p class="project-summary">
+                Strategic market sizing and growth opportunity assessment of the Indian audio streaming ecosystem, evaluating mobile-first user adoption and top-down addressable market funnels.
+              </p>
+
+              <button type="button" class="project-visual-thumb"
+                data-lightbox-src="assets/images/spotify-india-market-architecture.png"
+                data-lightbox-caption="Project 07: Spotify India Market Sizing & TAM Architecture"
+                aria-label="Enlarge Spotify Market Analysis visual schematic">
+                <img class="project-card-img" src="assets/images/spotify-india-market-architecture.png" alt="Spotify India Market Sizing Schematic" width="1000" height="560">
+                <span class="conceptual-arch-badge">Conceptual Architecture</span>
+              </button>
+
+              <div class="project-schematic-preview">
+                <div class="schematic-header">
+                  <span>MARKET SIZING ARCHITECTURE</span>
+                  <span>STRATEGIC ANALYSIS</span>
+                </div>
+                <div class="schematic-tags-grid">
+                  <span class="schematic-metric-tag">Total Addressable Market (TAM)</span>
+                  <span class="schematic-metric-tag">Top-Down Market Sizing</span>
+                  <span class="schematic-metric-tag">Year-over-Year Growth</span>
+                  <span class="schematic-metric-tag">Mobile-First User Adoption</span>
+                  <span class="schematic-metric-tag">Market Opportunity Analysis</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="project-card-actions">
+                <button type="button" class="btn btn-secondary case-toggle-btn" data-target-drawer="drawer-p7" aria-expanded="false">
+                  <span class="toggle-btn-label">Expand Full Case Study</span>
+                </button>
+                <a href="https://github.com/omkarmalgi/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary project-live-github-link" style="display: none;">
+                  <span>View Strategy Deck</span>
+                </a>
+              </div>
+
+              <div id="drawer-p7" class="case-study-drawer">
+                <div class="cs-block">
+                  <h4>Top-Down Market Sizing &amp; Mobile-First Opportunity</h4>
+                  <p>Segmented India's internet and smartphone penetration cohorts to estimate Total Addressable Market (TAM), analyzing regional vernacular catalogue consumption, freemium-to-paid conversion drivers, and YoY streaming expansion.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 08: FLIPKART CUSTOMER SERVICE RETENTION ANALYSIS -->
+          <article id="project-08-flipkart" class="project-card tilt-card-3d reveal-on-scroll" data-proj-tags="excel,ba">
+            <div>
+              <div class="project-top-meta">
+                <span class="project-number">PROJECT 08 // CX OPERATIONS &amp; RETENTION ANALYTICS</span>
+                <div class="tool-pills">
+                  <span class="tool-pill">Metric Tree</span>
+                  <span class="tool-pill">EDA</span>
+                  <span class="tool-pill">Excel Dashboard</span>
+                </div>
+              </div>
+              <h3 class="project-card-title">Flipkart Customer Service Retention Analysis</h3>
+              <span class="project-period-tag">Operational Retention Case Study</span>
+              <p class="project-summary">
+                Root-cause investigation linking customer support service KPIs with repeat purchase retention through structured metric trees, exploratory data analysis, and an interactive Microsoft Excel dashboard.
+              </p>
+
+              <button type="button" class="project-visual-thumb"
+                data-lightbox-src="assets/images/flipkart-retention-architecture.png"
+                data-lightbox-caption="Project 08: Flipkart Customer Service Retention Metric Tree & Excel Architecture"
+                aria-label="Enlarge Flipkart Retention Analysis visual schematic">
+                <img class="project-card-img" src="assets/images/flipkart-retention-architecture.png" alt="Flipkart Customer Service Retention Architecture Schematic" width="1000" height="560">
+                <span class="conceptual-arch-badge">Conceptual Architecture</span>
+              </button>
+
+              <div class="project-schematic-preview">
+                <div class="schematic-header">
+                  <span>RETENTION &amp; SERVICE KPI MODULES</span>
+                  <span>EXCEL &bull; METRIC TREE</span>
+                </div>
+                <div class="schematic-tags-grid">
+                  <span class="schematic-metric-tag">Metric Tree</span>
+                  <span class="schematic-metric-tag">Exploratory Data Analysis</span>
+                  <span class="schematic-metric-tag">Customer Retention</span>
+                  <span class="schematic-metric-tag">Service KPIs</span>
+                  <span class="schematic-metric-tag">Excel Dashboard</span>
+                  <span class="schematic-metric-tag">Business Recommendations</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="project-card-actions">
+                <button type="button" class="btn btn-secondary case-toggle-btn" data-target-drawer="drawer-p8" aria-expanded="false">
+                  <span class="toggle-btn-label">Expand Full Case Study</span>
+                </button>
+                <a href="https://github.com/omkarmalgi/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary project-live-github-link" style="display: none;">
+                  <span>View Workbook</span>
+                </a>
+              </div>
+
+              <div id="drawer-p8" class="case-study-drawer">
+                <div class="cs-block">
+                  <h4>Metric Tree Decomposition &amp; CX Recommendations</h4>
+                  <p>Decomposed customer churn drivers into first-contact resolution (FCR), resolution turnaround time, and delivery escalation rates, presenting actionable operational improvements via an interactive Microsoft Excel dashboard.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 05 — BUSINESS ANALYSIS & DECISION INTELLIGENCE
+         ====================================================================== -->
+    <section id="methodology">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="mono-label">SECTION 05 // BUSINESS ANALYSIS &amp; DECISION INTELLIGENCE</span>
+          <h2 class="section-title">End-to-End Analytical Decision Workflow</h2>
+          <p class="section-subtitle">
+            Translating ambiguous operational challenges into measurable business outcomes through a connected 7-stage methodology.
+          </p>
+        </div>
+
+        <div class="workflow-track-wrapper reveal-on-scroll">
+          <!-- Connected SVG Flow Line -->
+          <svg class="workflow-connector-svg" viewBox="0 0 1260 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <line x1="60" y1="14" x2="1200" y2="14" stroke="#203B59" stroke-width="2" stroke-dasharray="6 6"/>
+            <circle cx="90" cy="14" r="5" fill="#00C9B1"/>
+            <circle cx="275" cy="14" r="5" fill="#2585E8"/>
+            <circle cx="460" cy="14" r="5" fill="#00C9B1"/>
+            <circle cx="645" cy="14" r="5" fill="#2585E8"/>
+            <circle cx="830" cy="14" r="5" fill="#00C9B1"/>
+            <circle cx="1015" cy="14" r="5" fill="#2585E8"/>
+            <circle cx="1170" cy="14" r="5" fill="#00C9B1"/>
+          </svg>
+
+          <div id="workflow-grid" class="workflow-grid">
+            <div class="workflow-step-card tilt-card-3d">
+              <div class="workflow-step-top">
+                <span class="workflow-step-num">01</span>
+                <span class="workflow-arrow-hint">&rarr;</span>
+              </div>
+              <h3 class="workflow-step-title">Business Problem Identification</h3>
+              <p class="workflow-step-desc">Frame the core commercial, financial, or operational challenge before querying any dataset.</p>
+            </div>
+
+            <div class="workflow-step-card tilt-card-3d">
+              <div class="workflow-step-top">
+                <span class="workflow-step-num">02</span>
+                <span class="workflow-arrow-hint">&rarr;</span>
+              </div>
+              <h3 class="workflow-step-title">Requirements Gathering</h3>
+              <p class="workflow-step-desc">Align stakeholders, document BRDs, and validate functional and non-functional scope.</p>
+            </div>
+
+            <div class="workflow-step-card tilt-card-3d">
+              <div class="workflow-step-top">
+                <span class="workflow-step-num">03</span>
+                <span class="workflow-arrow-hint">&rarr;</span>
+              </div>
+              <h3 class="workflow-step-title">KPI Definition</h3>
+              <p class="workflow-step-desc">Establish Primary, Secondary, and Diagnostic KPI hierarchies with exact denominators.</p>
+            </div>
+
+            <div class="workflow-step-card tilt-card-3d">
+              <div class="workflow-step-top">
+                <span class="workflow-step-num">04</span>
+                <span class="workflow-arrow-hint">&rarr;</span>
+              </div>
+              <h3 class="workflow-step-title">Data Analysis</h3>
+              <p class="workflow-step-desc">Consolidate relational tables in SQL &amp; Excel, validate data integrity, and test formal hypotheses.</p>
+            </div>
+
+            <div class="workflow-step-card tilt-card-3d">
+              <div class="workflow-step-top">
+                <span class="workflow-step-num">05</span>
+                <span class="workflow-arrow-hint">&rarr;</span>
+              </div>
+              <h3 class="workflow-step-title">Dashboard Development</h3>
+              <p class="workflow-step-desc">Build interactive Tableau and Excel dashboards with multi-dimensional slicers and KPI cards.</p>
+            </div>
+
+            <div class="workflow-step-card tilt-card-3d">
+              <div class="workflow-step-top">
+                <span class="workflow-step-num">06</span>
+                <span class="workflow-arrow-hint">&rarr;</span>
+              </div>
+              <h3 class="workflow-step-title">Insight Generation</h3>
+              <p class="workflow-step-desc">Distinguish observed empirical findings from business interpretations and sample-size caveats.</p>
+            </div>
+
+            <div class="workflow-step-card tilt-card-3d">
+              <div class="workflow-step-top">
+                <span class="workflow-step-num">07</span>
+                <span class="workflow-arrow-hint">&#10003;</span>
+              </div>
+              <h3 class="workflow-step-title">Business Recommendations</h3>
+              <p class="workflow-step-desc">Deliver prioritized operational actions mapped to owners and tracked against baseline KPIs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 06 — PROFESSIONAL EXPERIENCE
+         ====================================================================== -->
+    <section id="experience" class="section-alt">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="mono-label">SECTION 06 // PROFESSIONAL EXPERIENCE</span>
+          <h2 class="section-title">Career Progression &amp; Operational Impact</h2>
+        </div>
+
+        <div id="experience-timeline" class="timeline-wrapper">
+          <!-- Role 1: NextLeap -->
+          <article class="timeline-item reveal-on-scroll">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <div class="timeline-card tilt-card-3d">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Business Analyst Fellow</h3>
+                  <div class="timeline-company">NextLeap</div>
+                </div>
+                <span class="timeline-period">June 2026 &ndash; Present</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Business and product case studies.</li>
+                <li>Structured problem-solving.</li>
+                <li>Business Requirement Documents (BRDs).</li>
+                <li>Functional and non-functional requirements.</li>
+                <li>Product metrics and KPIs.</li>
+                <li>Analytical dashboards using SQL, Excel and Tableau.</li>
+                <li>Actionable business insights.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Role 2: XL Dynamics India Pvt. Ltd. -->
+          <article class="timeline-item reveal-on-scroll">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <div class="timeline-card tilt-card-3d">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Associate Financial Analyst</h3>
+                  <div class="timeline-company">XL Dynamics India Pvt. Ltd.</div>
+                </div>
+                <span class="timeline-period">December 2020 &ndash; August 2024</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Financial and credit analysis for US mortgage applications.</li>
+                <li>Borrower income, asset, liability and credit history assessments.</li>
+                <li>Lending guideline compliance (FNMA/FHLMC &amp; banking regulations).</li>
+                <li>SQL-based operational data analysis and validation.</li>
+                <li>Microsoft Excel-based reporting and KPI monitoring.</li>
+                <li>Root cause investigation.</li>
+                <li>Operational reporting and process improvement.</li>
+                <li>Data validation and quality assurance.</li>
+                <li>Team coordination and SLA monitoring.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Role 3: Air India Limited -->
+          <article class="timeline-item reveal-on-scroll">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <div class="timeline-card tilt-card-3d">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Aircraft Maintenance &amp; Operations Intern</h3>
+                  <div class="timeline-company">Air India Limited</div>
+                </div>
+                <span class="timeline-period">December 2018 &ndash; January 2019</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Assisted with aircraft maintenance and inspections.</li>
+                <li>Worked with Boeing aircraft.</li>
+                <li>Developed knowledge of precision engineering and compliance procedures.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 07 — EDUCATION
+         ====================================================================== -->
+    <section id="education">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="mono-label">SECTION 07 // EDUCATION</span>
+          <h2 class="section-title">Academic Foundation</h2>
+        </div>
+
+        <div id="education-grid" class="education-grid">
+          <article class="edu-card tilt-card-3d reveal-on-scroll">
+            <div>
+              <h3 class="edu-degree">Bachelor of Engineering &ndash; Aeronautical Engineering</h3>
+              <p class="edu-inst">Annasaheb Dange College of Engineering</p>
+            </div>
+            <span class="edu-year tabular-nums">2020</span>
+          </article>
+
+          <article class="edu-card tilt-card-3d reveal-on-scroll">
+            <div>
+              <h3 class="edu-degree">Diploma &ndash; Mechanical Engineering</h3>
+              <p class="edu-inst">Government Polytechnic Miraj</p>
+            </div>
+            <span class="edu-year tabular-nums">2017</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 08 — CONTACT AND CONNECT
+         ====================================================================== -->
+    <section id="contact" class="section-alt">
+      <div class="container">
+        <div class="contact-panel reveal-on-scroll">
+          <div class="contact-grid">
+            <div>
+              <span class="mono-label">SECTION 08 // CONTACT &amp; CONNECT</span>
+              <h2 class="section-title" style="margin-top: 10px; margin-bottom: 16px;">LET'S TURN INSIGHTS INTO IMPACT.</h2>
+              <p class="section-subtitle" style="margin-bottom: 28px;">
+                Available for Business Analyst, Data Analyst, Financial Analytics, and Decision Intelligence opportunities. Reach out directly via email, telephone, LinkedIn, or GitHub.
+              </p>
+
+              <div class="contact-actions-group">
+                <a id="contact-mailto-btn" href="mailto:omkarmalgi98@gmail.com?subject=Business%20Analyst%20Opportunity%20%E2%80%94%20Omkar%20Malgi" class="btn btn-primary">
+                  <span>Launch Email Application</span>
+                </a>
+
+                <button type="button" id="copy-email-btn" class="btn btn-teal" data-email="omkarmalgi98@gmail.com">
+                  <span>Copy Email Address</span>
+                </button>
+
+                <a id="contact-linkedin-btn" href="https://www.linkedin.com/in/omkarmalgi/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary linkedin-profile-link">
+                  <span>LinkedIn</span>
+                </a>
+
+                <a id="contact-github-btn" href="https://github.com/omkarmalgi/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary github-profile-link">
+                  <span>GitHub</span>
+                </a>
+
+                <button type="button" class="btn btn-locked resume-action-btn" aria-label="Download Resume (Resume Coming Soon)" aria-disabled="true">
+                  <span>Download Resume</span>
+                  <span class="lock-badge">RESUME COMING SOON</span>
+                </button>
+              </div>
+
+              <div class="mailto-notice">
+                <strong>Direct Email &amp; Offline Note:</strong> Clicking "Launch Email Application" opens your default mail client (<code id="contact-mailto-code">mailto:omkarmalgi98@gmail.com</code>). All portfolio details and links can be updated in a single place via <code>js/content.js</code>.
+              </div>
+            </div>
+
+            <div class="contact-details-list">
+              <div class="contact-item-row">
+                <div>
+                  <span class="contact-item-label">Full Name</span>
+                  <span id="contact-name-val" class="contact-item-value">Omkar Malgi</span>
+                </div>
+                <span class="mono-label">BA | DA</span>
+              </div>
+
+              <div class="contact-item-row">
+                <div>
+                  <span class="contact-item-label">Email Address</span>
+                  <a id="contact-email-val" href="mailto:omkarmalgi98@gmail.com" class="contact-item-value">omkarmalgi98@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-item-row">
+                <div>
+                  <span class="contact-item-label">Phone Number</span>
+                  <a id="contact-phone-val" href="tel:+919325132927" class="contact-item-value tabular-nums">+91 93251 32927</a>
+                </div>
+              </div>
+
+              <div class="contact-item-row">
+                <div>
+                  <span class="contact-item-label">Location</span>
+                  <span id="contact-location-val" class="contact-item-value">Pune, Maharashtra, India</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       FOOTER & BACK-TO-TOP BUTTON
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong id="footer-name-text">OMKAR MALGI</strong> &mdash; <span id="footer-designation-text">Business Analyst | Data Analyst Portfolio</span>
+      </div>
+      <div>
+        Built with semantic HTML5, CSS3 &amp; Vanilla JavaScript &bull; Configured via <code>js/content.js</code> &bull; 100% Offline &amp; GitHub Pages Ready
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" id="back-to-top" class="back-to-top" aria-label="Scroll back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Central Content Configuration + Interactive Engine (100% Local Offline) -->
+  <script src="js/content.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
