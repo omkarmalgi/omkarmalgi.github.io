@@ -2106,6 +2106,14 @@ a:focus-visible {
   transform: translateY(0);
 }
 
+/* Getir featured case study: keep visible on iOS Safari even if scroll-reveal
+   observation is delayed or skipped. This is intentionally limited to Project 01. */
+#project-01-getir {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+
 /* ==========================================================================
    RESPONSIVE BREAKPOINTS (1440px, 1366px, 1024px, 768px, 430px, 390px, 360px)
    Desktop (1366px & 1440px) uses the default layout above without modification.
