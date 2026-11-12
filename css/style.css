@@ -2664,3 +2664,108 @@ a:focus-visible {
     transform: none !important;
   }
 }
+
+
+/* REAL PROJECT PREVIEWS & DELIVERABLE LINKS */
+.project-visual-gallery {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+  margin: 14px 0 18px;
+  align-items: start;
+}
+
+.project-visual-gallery.multi-image-gallery {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.project-visual-gallery .project-visual-thumb {
+  position: relative;
+  margin: 0;
+  min-width: 0;
+  background: rgba(7, 20, 38, 0.92);
+}
+
+.project-visual-gallery .project-card-img {
+  width: 100%;
+  height: 230px;
+  object-fit: contain;
+  display: block;
+  background: rgba(7, 20, 38, 0.92);
+}
+
+.project-visual-gallery.single-image-gallery .project-card-img {
+  height: 290px;
+}
+
+.preview-image-label {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  z-index: 2;
+  padding: 5px 9px;
+  border-radius: 5px;
+  border: 1px solid rgba(80, 130, 180, 0.65);
+  background: rgba(7, 20, 38, 0.92);
+  color: #d8eaff;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.project-visual-thumb.image-load-failed {
+  min-height: 90px;
+  cursor: default;
+  border-style: dashed;
+}
+
+.project-schematic-preview,
+.conceptual-arch-badge {
+  display: none !important;
+}
+
+.project-resource-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 11px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-color);
+}
+
+.project-resource-btn {
+  font-size: 0.76rem;
+  padding: 8px 12px;
+  min-height: 36px;
+}
+
+.project-card-actions .project-live-tableau-link,
+.project-card-actions .project-live-github-link {
+  text-decoration: none;
+}
+
+@media (max-width: 680px) {
+  .project-visual-gallery.multi-image-gallery {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .project-visual-gallery .project-card-img,
+  .project-visual-gallery.single-image-gallery .project-card-img {
+    height: auto;
+    max-height: 300px;
+    min-height: 170px;
+    object-fit: contain;
+  }
+
+  .project-resource-links {
+    flex-direction: column;
+  }
+
+  .project-resource-btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
