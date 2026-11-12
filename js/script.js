@@ -78,7 +78,7 @@
         - Education (education array -> #education-grid)
         - Getir KPI cards (featuredGetirProject.headlineKpis -> #getir-kpi-grid)
         - Getir case study details & Scope/Limitations disclosure
-        - Projects 02–08 (descriptions, dates, tools, dimensions, images, drawers, links)
+        - Projects 02–08 (verified descriptions, real-image galleries, drawers, repository and download links)
      ------------------------------------------------------------------------ */
   function syncFromContentConfig(customContent) {
     const cfg = customContent || window.PORTFOLIO_CONTENT;
@@ -494,29 +494,76 @@
         const summaryEl = card.querySelector('.project-summary');
         if (summaryEl && proj.summary) summaryEl.textContent = proj.summary;
 
-        const imgEl = card.querySelector('.project-card-img');
-        if (imgEl && proj.image) {
-          imgEl.setAttribute('src', proj.image);
-          if (proj.title) imgEl.setAttribute('alt', proj.title + ' Architecture Schematic');
+        // Replace generic conceptual diagrams with the exact project screenshots
+        // or original document previews supplied for this portfolio.
+        const visualPlaceholder = card.querySelector('.project-visual-thumb');
+        const galleryImages = Array.isArray(proj.images) ? proj.images : (proj.image ? [{
+          src: proj.image,
+          alt: proj.title || 'Project preview',
+          caption: proj.imageCaption || proj.title || 'Project preview',
+          label: 'Project preview'
+        }] : []);
+
+        if (visualPlaceholder && galleryImages.length) {
+          const gallery = document.createElement('div');
+          gallery.className = 'project-visual-gallery' + (galleryImages.length > 1 ? ' multi-image-gallery' : ' single-image-gallery');
+          galleryImages.forEach(function (item) {
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'project-visual-thumb';
+            button.setAttribute('data-lightbox-src', item.src);
+            button.setAttribute('data-lightbox-caption', item.caption || item.label || proj.title || 'Project preview');
+            button.setAttribute('aria-label', 'Enlarge ' + (item.alt || proj.title || 'project preview'));
+
+            const image = document.createElement('img');
+            image.className = 'project-card-img';
+            image.src = item.src;
+            image.alt = item.alt || proj.title || 'Project preview';
+            image.loading = 'lazy';
+            image.decoding = 'async';
+            image.onerror = function () {
+              button.classList.add('image-load-failed');
+              button.setAttribute('aria-label', 'Preview image could not be loaded: ' + (item.label || proj.title || 'project image'));
+            };
+            button.appendChild(image);
+
+            if (item.label) {
+              const label = document.createElement('span');
+              label.className = 'preview-image-label';
+              label.textContent = item.label;
+              button.appendChild(label);
+            }
+            gallery.appendChild(button);
+          });
+          visualPlaceholder.replaceWith(gallery);
         }
 
-        const zoomBtn = card.querySelector('.project-visual-thumb');
-        if (zoomBtn && proj.image) {
-          zoomBtn.setAttribute('data-lightbox-src', proj.image);
-          if (proj.imageCaption) zoomBtn.setAttribute('data-lightbox-caption', proj.imageCaption);
-        }
+        // Remove the old generic schematic tag panels and conceptual badges.
+        const schematic = card.querySelector('.project-schematic-preview');
+        if (schematic) schematic.remove();
+        card.querySelectorAll('.conceptual-arch-badge').forEach(function (badge) { badge.remove(); });
 
-        const schemHeaders = card.querySelectorAll('.schematic-header span');
-        if (schemHeaders.length >= 2) {
-          if (proj.schematicLeftLabel) schemHeaders[0].textContent = proj.schematicLeftLabel;
-          if (proj.schematicRightLabel) schemHeaders[1].textContent = proj.schematicRightLabel;
+        // Create direct links to the actual project repository and deliverables.
+        const actions = card.querySelector('.project-card-actions');
+        let resourceWrap = card.querySelector('.project-resource-links');
+        if (!resourceWrap && actions) {
+          resourceWrap = document.createElement('div');
+          resourceWrap.className = 'project-resource-links';
+          actions.insertAdjacentElement('afterend', resourceWrap);
         }
-
-        const dimsGrid = card.querySelector('.schematic-tags-grid');
-        if (dimsGrid && Array.isArray(proj.dimensions)) {
-          dimsGrid.innerHTML = proj.dimensions.map(function (d) {
-            return '<span class="schematic-metric-tag">' + d + '</span>';
-          }).join('');
+        if (resourceWrap) {
+          resourceWrap.innerHTML = '';
+          (Array.isArray(proj.resources) ? proj.resources : []).forEach(function (resource, index) {
+            const link = document.createElement('a');
+            link.className = 'btn ' + (index === 0 ? 'btn-primary' : 'btn-secondary') + ' project-resource-btn';
+            link.href = resource.url;
+            link.textContent = resource.label;
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+            if (resource.download) link.setAttribute('download', '');
+            resourceWrap.appendChild(link);
+          });
+          resourceWrap.style.display = resourceWrap.children.length ? 'flex' : 'none';
         }
 
         const drawer = card.querySelector('.case-study-drawer');
@@ -549,6 +596,8 @@
           if (proj.tableauUrl && proj.tableauUrl.trim() !== '') {
             liveTabBtn.setAttribute('href', proj.tableauUrl.trim());
             liveTabBtn.style.display = 'inline-flex';
+            const label = liveTabBtn.querySelector('span');
+            if (label) label.textContent = 'Open Tableau Public Dashboard';
           } else {
             liveTabBtn.style.display = 'none';
           }
@@ -559,6 +608,8 @@
           if (proj.githubUrl && proj.githubUrl.trim() !== '') {
             liveGitBtn.setAttribute('href', proj.githubUrl.trim());
             liveGitBtn.style.display = 'inline-flex';
+            const label = liveGitBtn.querySelector('span');
+            if (label) label.textContent = 'Open Project Repository';
           } else {
             liveGitBtn.style.display = 'none';
           }
