@@ -24,8 +24,9 @@
       (headlineKpis, dashboardImage, dashboardCaption, tableauPublicUrl,
       caseStudy, and scopeLimitations).
    7. PROJECTS 02–08: Edit any object in the `projects` array (title, period,
-      filterTags, tools, summary, image, imageCaption, dimensions,
-      caseStudyBlocks, tableauUrl, githubUrl).
+      filterTags, tools, summary, images, caseStudyBlocks, tableauUrl,
+      githubUrl, and resources). `images` supports actual dashboard/document
+      previews; `resources` adds direct download links for project deliverables.
    ========================================================================== */
 
 window.PORTFOLIO_CONTENT = {
@@ -203,7 +204,7 @@ window.PORTFOLIO_CONTENT = {
       "<strong>Tableau Dashboard Screenshot ('getir | RETURNS ANALYSIS'):</strong> Static preview of the completed Tableau dashboard deliverable (click image or button above to inspect in full-screen lightbox). Integrates the 5-card executive KPI ribbon (30,271 records, 4.70% Total Return Rate, 3.72% Avoidable Return Rate, 79.00% Avoidable Share, ₹16.89 Avg Cost Returned), Avoidable Return Rate by Product Category, Top 10 Avoidable Return Reasons donut, Order Time Band dual-line chart, Discount Range bar-line combo, Turkey Regional Return Insights map, Customer Age Group dot plot, and 5×5 Pearson Correlation Heatmap.",
     /* Leave tableauPublicUrl empty ("") until your verified live Tableau Public URL is published. Only when populated will the live Tableau button appear. */
     tableauPublicUrl: "",
-    githubUrl: "",
+    githubUrl: "https://github.com/omkarmalgi/getir-quick-commerce-returns-analysis",
     headlineKpis: [
       {
         label: "Total Records",
@@ -289,7 +290,7 @@ window.PORTFOLIO_CONTENT = {
       scopeLimitations: [
         "<strong>Project & Reporting Period:</strong> January 2021 – June 2026 (Dataset <code>OrderDate</code> coverage: January 1, 2021 – June 1, 2026).",
         "<strong>Dataset Scope:</strong> 30,271 consolidated order-product records across 10,000 unique orders, 1,000 customers, 100 SKUs, 10 categories, and 5 regions (10 cities).",
-        "<strong>Dataset Provenance:</strong> External live operational provenance of the supplied graduation project dataset is unspecified; all metrics reflect structured analysis of the provided relational workbook.",
+        "<strong>Dataset Provenance:</strong> The project dataset was supplied through the NextLeap Business Analyst Fellowship. The analysis is an independent portfolio exercise and is not verified Getir internal reporting.",
         "<strong>Observational & Inferential Boundaries:</strong> Descriptive subgroup comparisons and Pearson correlations (all off-diagonal <code>|r| ≤ 0.020</code>) capture observational patterns and do not establish causation or formal statistical significance.",
         "<strong>Subgroup Sample-Size Caution:</strong> Smaller analytical slices—such as the Black Sea operating region (258 total records; 7 avoidable returns) and narrow discount bands (21–25%: 577 records)—require sample-size caution before operational generalisation."
       ]
@@ -298,235 +299,379 @@ window.PORTFOLIO_CONTENT = {
 
   projects: [
     {
-      id: "project-02-swiggy",
-      number: "PROJECT 02 // WEB ANALYTICS & BI",
-      title: "Swiggy Traffic Analysis Dashboard",
-      period: "July – October (Reporting Window)",
-      filterTags: ["tableau"],
-      tools: ["Tableau", "Data Analysis"],
-      summary:
-        "Multi-dimensional website traffic and acquisition funnel investigation covering July to October, evaluating session volume, conversion efficiency, bounce rates, traffic sources, device split, and landing-page performance.",
-      image: "assets/images/swiggy-traffic-architecture.png",
-      imageCaption: "Project 02: Swiggy Traffic Analysis Dashboard Architecture (July – October) — Replaceable in js/content.js.",
-      schematicLeftLabel: "ANALYTICAL DIMENSIONS",
-      schematicRightLabel: "TABLEAU TELEMETRY",
-      dimensions: [
-        "Sessions",
-        "Conversion Rate",
-        "Bounce Rate",
-        "Avg. Session Duration",
-        "Traffic Sources",
-        "Device Distribution",
-        "Geographical Analysis",
-        "New vs. Returning Visitors",
-        "Landing-Page Performance"
-      ],
-      caseStudyBlocks: [
-        {
-          heading: "Business Problem & Objective",
-          body: "Evaluated July–October website traffic to understand how traffic sources, device segments, geographical regions, and landing pages influence conversion rate, bounce rate, and average session duration across new and returning visitors."
-        },
-        {
-          heading: "Analytical Methodology & Recommendations",
-          body: "Built a Tableau dashboard tracking session cohorts, channel conversion efficiency, and high-bounce entry pages to guide landing-page UX optimisation and marketing channel reallocation."
-        }
-      ],
-      tableauUrl: "",
-      githubUrl: ""
+        "id": "project-02-swiggy",
+        "number": "PROJECT 02 // WEBSITE PERFORMANCE & WEB ANALYTICS",
+        "title": "Swiggy Website Performance Analysis",
+        "period": "July–October 2024 | Tableau Dashboard",
+        "filterTags": [
+            "tableau",
+            "excel",
+            "ba"
+        ],
+        "tools": [
+            "Tableau",
+            "Website Analytics",
+            "Data Analysis"
+        ],
+        "summary": "A session-level website performance analysis covering traffic acquisition, visitor behaviour, geographic distribution, landing pages and conversion performance. The dashboard reports 30,110 sessions across the July–October 2024 reporting window.",
+        "images": [
+            {
+                "src": "assets/images/swiggy-website-performance-dashboard.png",
+                "alt": "Swiggy Website Performance Dashboard showing sessions, conversion rate, bounce rate, session duration, traffic trends, geography and traffic sources.",
+                "label": "Actual Tableau dashboard",
+                "caption": "Swiggy Website Performance Dashboard — July to October 2024."
+            }
+        ],
+        "caseStudyBlocks": [
+            {
+                "heading": "Dashboard KPIs",
+                "body": "The published dashboard displays <strong>30,110 total sessions</strong>, a <strong>45.6% conversion rate</strong>, a <strong>22.7% bounce rate</strong> and <strong>5.50 minutes</strong> average session duration."
+            },
+            {
+                "heading": "Traffic & Page-Level Observations",
+                "body": "The dashboard attributes 15,007 sessions to Organic, 8,957 to Direct, 3,104 to Paid and 3,042 to Referral. The Homepage records 15,134 sessions, followed by Product Page (6,006), Blog (3,106), Contact Us (2,945) and Checkout (2,919)."
+            },
+            {
+                "heading": "Dataset & Deliverable",
+                "body": "The supplied session dataset contains 10,000 rows and 15 columns. The work is presented through a Tableau dashboard and a published Tableau Public view. The displayed KPI totals are dashboard aggregations, not the raw row count."
+            }
+        ],
+        "tableauUrl": "https://public.tableau.com/app/profile/omkar.malgi/viz/SwiggyTrafficAnalysisDashboard_17889819421700/TrafficDashboard",
+        "githubUrl": "https://github.com/omkarmalgi/other-business-analyst-projects/tree/main/swiggy-website-performance-analysis",
+        "resources": [
+            {
+                "label": "Download Dashboard Screenshot",
+                "url": "assets/images/swiggy-website-performance-dashboard.png",
+                "download": true
+            }
+        ]
     },
     {
-      id: "project-03-fraud",
-      number: "PROJECT 03 // FINANCIAL RISK & FRAUD ANALYTICS",
-      title: "Credit Card Fraud Detection Analysis",
-      period: "Analytical Risk Case Study",
-      filterTags: ["sql", "excel", "tableau"],
-      tools: ["SQL", "Excel", "Tableau"],
-      summary:
-        "Financial risk investigation examining fraudulent credit card transaction trends, transaction amount distributions, high-risk anomalies, and rule-based risk-mitigation recommendations.",
-      image: "assets/images/credit-fraud-architecture.png",
-      imageCaption: "Project 03: Credit Card Fraud Detection Analytical Architecture — Replaceable in js/content.js.",
-      schematicLeftLabel: "FRAUD INVESTIGATION MODULES",
-      schematicRightLabel: "SQL • EXCEL • TABLEAU",
-      dimensions: [
-        "Fraud Trend Analysis",
-        "Transaction Distribution",
-        "Fraud-Related KPIs",
-        "SQL Analytical Investigation",
-        "Dashboard Visualisation",
-        "Risk-Mitigation Rules"
-      ],
-      caseStudyBlocks: [
-        {
-          heading: "Business Problem & SQL Investigation",
-          body: "Used SQL filtering, conditional aggregations, and velocity segmentation to profile high-risk transaction buckets while minimizing false positives on legitimate cardholders."
-        },
-        {
-          heading: "Dashboard Visualisation & Risk Mitigation",
-          body: "Validated transaction value distributions in Excel and built Tableau risk monitoring views to recommend step-up verification triggers on anomalous transaction bands."
-        }
-      ],
-      tableauUrl: "",
-      githubUrl: ""
+        "id": "project-03-fraud",
+        "number": "PROJECT 03 // FINANCIAL RISK & FRAUD ANALYTICS",
+        "title": "Credit Card Fraud Detection Analysis",
+        "period": "Anonymised Credit Card Transaction Dataset",
+        "filterTags": [
+            "sql",
+            "excel",
+            "tableau"
+        ],
+        "tools": [
+            "MySQL",
+            "Microsoft Excel",
+            "Tableau"
+        ],
+        "summary": "A business-focused fraud analytics project using anonymised credit card transactions to compare genuine and fraudulent activity, examine transaction amounts and present fraud-monitoring KPIs through Excel and Tableau dashboards.",
+        "images": [
+            {
+                "src": "https://raw.githubusercontent.com/omkarmalgi/credit-card-fraud-detection-analysis/main/Dashboards/tableau_dashboard.png",
+                "alt": "Actual Tableau dashboard preview from the Credit Card Fraud Detection Analysis repository.",
+                "label": "Tableau dashboard",
+                "caption": "Credit Card Fraud Detection — Tableau dashboard preview."
+            },
+            {
+                "src": "https://raw.githubusercontent.com/omkarmalgi/credit-card-fraud-detection-analysis/main/Dashboards/excel_dashboard.jpg",
+                "alt": "Actual Excel dashboard preview from the Credit Card Fraud Detection Analysis repository.",
+                "label": "Excel dashboard",
+                "caption": "Credit Card Fraud Detection — Excel dashboard preview."
+            }
+        ],
+        "caseStudyBlocks": [
+            {
+                "heading": "Dataset & Business Questions",
+                "body": "The dataset uses anonymised transaction features: <code>Time</code>, <code>V1–V28</code>, <code>Amount</code> and <code>Class</code> (0 = genuine, 1 = fraud). The analysis addresses fraud frequency, genuine-versus-fraud comparison, transaction value distributions and fraud-related transaction value."
+            },
+            {
+                "heading": "SQL Analysis & Visualisation",
+                "body": "The repository contains SQL analysis for total transactions, fraud counts and percentage, transaction amount statistics, fraud transaction values, amount segmentation and business summary metrics. Excel and Tableau dashboards present the resulting KPIs and patterns."
+            },
+            {
+                "heading": "Tools & Scope",
+                "body": "The existing project documentation identifies MySQL, Microsoft Excel and Tableau as the tools used. This portfolio card describes the contents of the submitted project; it does not claim a production fraud-detection model or measured reduction in fraud losses."
+            }
+        ],
+        "tableauUrl": "",
+        "githubUrl": "https://github.com/omkarmalgi/credit-card-fraud-detection-analysis",
+        "resources": [
+            {
+                "label": "Download SQL Analysis",
+                "url": "https://github.com/omkarmalgi/credit-card-fraud-detection-analysis/raw/refs/heads/main/SQL/Credit%20Card%20Fraud%20Analysis.sql",
+                "download": true
+            },
+            {
+                "label": "Download Tableau Dashboard Image",
+                "url": "https://github.com/omkarmalgi/credit-card-fraud-detection-analysis/raw/refs/heads/main/Dashboards/tableau_dashboard.png",
+                "download": true
+            },
+            {
+                "label": "Download Excel Dashboard Image",
+                "url": "https://github.com/omkarmalgi/credit-card-fraud-detection-analysis/raw/refs/heads/main/Dashboards/excel_dashboard.jpg",
+                "download": true
+            }
+        ]
     },
     {
-      id: "project-04-loan",
-      number: "PROJECT 04 // CREDIT UNDERWRITING ANALYTICS",
-      title: "Loan Approval Analysis",
-      period: "Credit Decisioning Case Study",
-      filterTags: ["sql", "excel", "tableau"],
-      tools: ["SQL", "Excel", "Tableau"],
-      summary:
-        "Credit underwriting and lending decision analysis investigating applicant income tiers, credit history impact, demographic segments, approval rates, and lending trends.",
-      image: "assets/images/loan-approval-architecture.png",
-      imageCaption: "Project 04: Loan Approval & Underwriting Analytical Architecture — Replaceable in js/content.js.",
-      schematicLeftLabel: "UNDERWRITING DIMENSIONS",
-      schematicRightLabel: "SQL • EXCEL • TABLEAU",
-      dimensions: [
-        "Loan Approval Analysis",
-        "Applicant Income Analysis",
-        "Credit History Impact",
-        "Demographic Analysis",
-        "Approval Rate KPIs",
-        "Lending Recommendations"
-      ],
-      caseStudyBlocks: [
-        {
-          heading: "Domain Context & Underwriting Scope",
-          body: "Grounded in practical mortgage credit analysis experience, this project examines how applicant income, credit bureau history, and demographic attributes interact to influence loan approval outcomes."
-        },
-        {
-          heading: "Analytical Recommendations",
-          body: "Formulated tiered credit-screening guidelines combining credit history compliance and income-to-loan thresholds to accelerate prime approvals and standardise manual exception reviews."
-        }
-      ],
-      tableauUrl: "",
-      githubUrl: ""
+        "id": "project-04-loan",
+        "number": "PROJECT 04 // CREDIT DECISIONING & LOAN ANALYTICS",
+        "title": "Loan Approval Analysis",
+        "period": "614 Loan Applications | Credit Decisioning Case Study",
+        "filterTags": [
+            "sql",
+            "excel",
+            "tableau"
+        ],
+        "tools": [
+            "PostgreSQL",
+            "Microsoft Excel",
+            "Tableau"
+        ],
+        "summary": "An end-to-end loan application analysis using 614 records to study approval outcomes and compare applicant segments across credit history, education, marital status, income and property area.",
+        "images": [
+            {
+                "src": "https://raw.githubusercontent.com/omkarmalgi/loan-approval-analysis/main/Dashboards/Tableau%20Dashboard.png",
+                "alt": "Actual Tableau dashboard preview for the Loan Approval Analysis project.",
+                "label": "Tableau dashboard",
+                "caption": "Loan Approval Analysis — Tableau dashboard preview."
+            },
+            {
+                "src": "https://raw.githubusercontent.com/omkarmalgi/loan-approval-analysis/main/Dashboards/Excel%20Dashboard.jpg",
+                "alt": "Actual Excel dashboard preview for the Loan Approval Analysis project.",
+                "label": "Excel dashboard",
+                "caption": "Loan Approval Analysis — Excel dashboard preview."
+            }
+        ],
+        "caseStudyBlocks": [
+            {
+                "heading": "Dataset & Primary KPI",
+                "body": "The project analyses <strong>614 loan applications</strong>. The repository reports an overall loan approval rate of <strong>68.73%</strong> and includes applicant, co-applicant, loan, credit-history, education, marital-status and property-area fields."
+            },
+            {
+                "heading": "Key Findings in the Project README",
+                "body": "The documented analysis identifies credit history as the strongest factor associated with loan approval. Graduate applicants received more approvals than non-graduates, married applicants had higher approval counts, and semi-urban areas recorded the highest number of approved loans."
+            },
+            {
+                "heading": "Deliverables & Tools",
+                "body": "The existing repository includes an SQL analysis script, Excel and Tableau dashboard previews, a Tableau workbook and the cleaned dataset. The dashboard tracks approval KPIs and segment comparisons."
+            }
+        ],
+        "tableauUrl": "",
+        "githubUrl": "https://github.com/omkarmalgi/loan-approval-analysis",
+        "resources": [
+            {
+                "label": "Download SQL Analysis",
+                "url": "https://github.com/omkarmalgi/loan-approval-analysis/raw/refs/heads/main/SQL/Loan_Approval_Analysis.sql",
+                "download": true
+            },
+            {
+                "label": "Download Tableau Dashboard Image",
+                "url": "https://github.com/omkarmalgi/loan-approval-analysis/raw/refs/heads/main/Dashboards/Tableau%20Dashboard.png",
+                "download": true
+            },
+            {
+                "label": "Download Excel Dashboard Image",
+                "url": "https://github.com/omkarmalgi/loan-approval-analysis/raw/refs/heads/main/Dashboards/Excel%20Dashboard.jpg",
+                "download": true
+            }
+        ]
     },
     {
-      id: "project-05-amazon",
-      number: "PROJECT 05 // ENTERPRISE SQL & E-COMMERCE STRATEGY",
-      title: "Amazon India Strategic Analysis",
-      period: "Strategic PostgreSQL Case Study",
-      filterTags: ["sql", "ba"],
-      tools: ["SQL", "PostgreSQL", "Business Analysis"],
-      summary:
-        "Relational database investigation of e-commerce sales performance, customer cohorts, product category revenue, and year-over-year growth using advanced PostgreSQL techniques.",
-      image: "assets/images/amazon-india-sql-architecture.png",
-      imageCaption: "Project 05: Amazon India PostgreSQL Analytical Architecture — Replaceable in js/content.js.",
-      schematicLeftLabel: "POSTGRESQL ANALYTICAL TECHNIQUES",
-      schematicRightLabel: "RELATIONAL ANALYSIS",
-      dimensions: [
-        "Multi-Table Joins",
-        "Aggregations",
-        "Common Table Expressions (CTEs)",
-        "Subqueries",
-        "Window Functions",
-        "GROUP BY & HAVING",
-        "YoY Revenue Growth"
-      ],
-      caseStudyBlocks: [
-        {
-          heading: "Business Problem & Relational SQL Architecture",
-          body: "Structured transactional e-commerce tables in PostgreSQL using multi-table INNER/LEFT JOINs, modular CTEs, and HAVING filters to evaluate regional revenue contribution and repeat customer cohorts."
-        },
-        {
-          heading: "Window Functions & Commercial Insights",
-          body: "Applied <code>DENSE_RANK()</code> for Top-N SKU performance within each category and <code>LAG()</code> window functions to quantify year-over-year category growth and seasonal momentum."
-        }
-      ],
-      tableauUrl: "",
-      githubUrl: ""
+        "id": "project-05-amazon",
+        "number": "PROJECT 05 // POSTGRESQL & E-COMMERCE STRATEGY",
+        "title": "Amazon Brazil Market Analysis — Strategic Report for Amazon India",
+        "period": "NextLeap Business Analyst Fellowship | Milestone 4",
+        "filterTags": [
+            "sql",
+            "ba"
+        ],
+        "tools": [
+            "PostgreSQL",
+            "SQL",
+            "Excel",
+            "Business Analysis"
+        ],
+        "summary": "A 30-page strategic analysis using the six NextLeap-provided Amazon Brazil project tables. PostgreSQL queries examine payment preferences, seasonal sales, product pricing, customer frequency, high-value customers and data quality, with recommendations discussed in an Amazon India context.",
+        "images": [
+            {
+                "src": "assets/images/amazon-brazil-report-cover.png",
+                "alt": "Cover page of Omkar Malgi's Amazon Brazil Market Analysis strategic report for Amazon India.",
+                "label": "30-page report",
+                "caption": "Amazon Brazil Market Analysis — original strategic report cover page."
+            }
+        ],
+        "caseStudyBlocks": [
+            {
+                "heading": "Dataset & SQL Scope",
+                "body": "The project dataset was provided by <strong>NextLeap</strong> and contains six relational tables: Customer Data, Orders, Order Items, Payments, Products and Sellers. The original SQL script is preserved as submitted."
+            },
+            {
+                "heading": "Selected Findings from the Report",
+                "body": "The report identifies credit cards as 73.9% of payment transactions; Spring seasonal sales at approximately BRL 4.21M; 3,140 customers with multiple orders; 614 records with missing or single-character category names; and approximately BRL 1.26M revenue for Beauty &amp; Health among the top five categories."
+            },
+            {
+                "heading": "Recommendations & Context",
+                "body": "Recommendations cover credit-card checkout, seasonal inventory and promotions, product-category data quality, customer retention, high-value customer programmes, high-performing categories and payment-method monitoring. Amazon India is the strategic case-study context; the analysis is based on NextLeap-provided Amazon Brazil project data, not Amazon internal records."
+            }
+        ],
+        "tableauUrl": "",
+        "githubUrl": "https://github.com/omkarmalgi/other-business-analyst-projects/tree/main/amazon-brazil-market-analysis",
+        "resources": [
+            {
+                "label": "Download 30-page Report (PDF)",
+                "url": "https://github.com/omkarmalgi/other-business-analyst-projects/raw/refs/heads/main/amazon-brazil-market-analysis/Amazon_Brazil_Market_Analysis_Report_By_Omkar_Malgi.pdf",
+                "download": true
+            },
+            {
+                "label": "Download Original SQL Script",
+                "url": "https://github.com/omkarmalgi/other-business-analyst-projects/raw/refs/heads/main/amazon-brazil-market-analysis/Amazon_brazil.sql",
+                "download": true
+            }
+        ]
     },
     {
-      id: "project-06-spotify-brd",
-      number: "PROJECT 06 // PRODUCT & SYSTEMS SPECIFICATION",
-      title: "Spotify Business Requirements Document",
-      period: "Business Analysis Deliverable",
-      filterTags: ["ba"],
-      tools: ["BRD", "Requirements Gathering", "KPI Design"],
-      summary:
-        "End-to-end Business Requirements Document translating user engagement challenges into structured stakeholder, functional, and non-functional specifications with measurable product KPIs.",
-      image: "assets/images/spotify-brd-architecture.png",
-      imageCaption: "Project 06: Spotify Business Requirements Document (BRD) Architecture — Replaceable in js/content.js.",
-      schematicLeftLabel: "BRD SPECIFICATION COMPONENTS",
-      schematicRightLabel: "BUSINESS ANALYSIS",
-      dimensions: [
-        "Business Problem",
-        "Stakeholder Requirements",
-        "User Requirements",
-        "Functional Requirements",
-        "Non-Functional Requirements",
-        "KPIs & Success Metrics"
-      ],
-      caseStudyBlocks: [
-        {
-          heading: "Structured Requirements Methodology",
-          body: "Defined clear problem statements, stakeholder RACI alignment, user requirements with acceptance criteria, functional workflows, system latency/availability NFRs, and post-launch adoption and retention KPIs."
-        }
-      ],
-      tableauUrl: "",
-      githubUrl: ""
+        "id": "project-06-spotify-brd",
+        "number": "PROJECT 06 // BUSINESS REQUIREMENTS & PRODUCT ANALYSIS",
+        "title": "Spotify India — Business Requirements Document",
+        "period": "9-page Business Requirements Document",
+        "filterTags": [
+            "ba"
+        ],
+        "tools": [
+            "Business Analysis",
+            "BRD",
+            "Requirements & KPI Definition"
+        ],
+        "summary": "A business requirements case study focused on improving Spotify India user engagement and listening time. The 9-page BRD defines the business problem, project scope, stakeholder needs, functional and non-functional requirements, KPIs, success criteria, timeline and cost-benefit considerations.",
+        "images": [
+            {
+                "src": "assets/images/spotify-india-brd-cover.png",
+                "alt": "First page of the Spotify India Business Requirements Document prepared by Omkar Malgi.",
+                "label": "Original BRD",
+                "caption": "Spotify India Business Requirements Document — first page preview."
+            }
+        ],
+        "caseStudyBlocks": [
+            {
+                "heading": "Business Problem & Project Scope",
+                "body": "The BRD addresses how Spotify India could improve user engagement and listening time. It documents business drivers, project scope, current and proposed user processes, stakeholders and project considerations."
+            },
+            {
+                "heading": "Requirements & Proposed KPIs",
+                "body": "The document includes functional and non-functional requirements, success criteria and proposed KPI targets: average listening time +15%, user retention +10%, premium subscription conversion +5% and early-session drop-offs −20%. These are proposed targets, not measured outcomes."
+            },
+            {
+                "heading": "Deliverable",
+                "body": "The original 9-page Spotify India BRD is available as a downloadable PDF in the dedicated project repository. No separate prototype, implementation or production experiment is claimed."
+            }
+        ],
+        "tableauUrl": "",
+        "githubUrl": "https://github.com/omkarmalgi/spotify-india-brd-product-analysis",
+        "resources": [
+            {
+                "label": "Download Spotify India BRD (PDF)",
+                "url": "https://github.com/omkarmalgi/spotify-india-brd-product-analysis/raw/refs/heads/main/deliverables/Spotify%20India%20BRD.pdf",
+                "download": true
+            }
+        ]
     },
     {
-      id: "project-07-spotify-market",
-      number: "PROJECT 07 // MARKET SIZING & GROWTH STRATEGY",
-      title: "Spotify Music Streaming Market Analysis – India",
-      period: "Strategic Market Analysis",
-      filterTags: ["ba"],
-      tools: ["Market Sizing", "TAM Analysis", "Growth Strategy"],
-      summary:
-        "Strategic market sizing and growth opportunity assessment of the Indian audio streaming ecosystem, evaluating mobile-first user adoption and top-down addressable market funnels.",
-      image: "assets/images/spotify-india-market-architecture.png",
-      imageCaption: "Project 07: Spotify India Market Sizing & TAM Architecture — Replaceable in js/content.js.",
-      schematicLeftLabel: "MARKET SIZING ARCHITECTURE",
-      schematicRightLabel: "STRATEGIC ANALYSIS",
-      dimensions: [
-        "Total Addressable Market (TAM)",
-        "Top-Down Market Sizing",
-        "Year-over-Year Growth",
-        "Mobile-First User Adoption",
-        "Market Opportunity Analysis"
-      ],
-      caseStudyBlocks: [
-        {
-          heading: "Top-Down Market Sizing & Mobile-First Opportunity",
-          body: "Segmented India's internet and smartphone penetration cohorts to estimate Total Addressable Market (TAM), analyzing regional vernacular catalogue consumption, freemium-to-paid conversion drivers, and YoY streaming expansion."
-        }
-      ],
-      tableauUrl: "",
-      githubUrl: ""
+        "id": "project-07-spotify-market",
+        "number": "PROJECT 07 // MARKET & COMPETITOR RESEARCH",
+        "title": "Spotify India — Market & Competitor Analysis",
+        "period": "3-slide Market Research Presentation",
+        "filterTags": [
+            "ba"
+        ],
+        "tools": [
+            "Market Research",
+            "Competitor Analysis",
+            "PowerPoint"
+        ],
+        "summary": "A concise research presentation examining India's music-streaming landscape, competitors, consumer language preferences, competitor user experience, app-store review themes and product opportunity areas for Spotify India.",
+        "images": [
+            {
+                "src": "assets/images/spotify-india-market-slide-1.png",
+                "alt": "First slide of Omkar Malgi's Spotify India market and competitor analysis presentation.",
+                "label": "Original presentation",
+                "caption": "Spotify India Market & Competitor Analysis — first-slide preview."
+            }
+        ],
+        "caseStudyBlocks": [
+            {
+                "heading": "Research Coverage",
+                "body": "The 3-slide presentation covers the Indian music-streaming market landscape, competitor offerings including JioSaavn, Gaana, YouTube Music and Amazon Music, consumer language preferences, competitor UX observations and app-store review patterns."
+            },
+            {
+                "heading": "Product Opportunity Areas",
+                "body": "The presentation highlights playlist discovery, listening sessions, offline mode and regional-content engagement as areas for further product exploration."
+            },
+            {
+                "heading": "Deliverable & Scope",
+                "body": "The original PowerPoint presentation is available for direct download. This is a research presentation, not a user-tested prototype, TAM model or implemented product feature."
+            }
+        ],
+        "tableauUrl": "",
+        "githubUrl": "https://github.com/omkarmalgi/spotify-india-brd-product-analysis",
+        "resources": [
+            {
+                "label": "Download Market Analysis (PPTX)",
+                "url": "https://github.com/omkarmalgi/spotify-india-brd-product-analysis/raw/refs/heads/main/deliverables/Spotify%20Market%20%26%20Competitor%20Analysis.pptx",
+                "download": true
+            }
+        ]
     },
     {
-      id: "project-08-flipkart",
-      number: "PROJECT 08 // CX OPERATIONS & RETENTION ANALYTICS",
-      title: "Flipkart Customer Service Retention Analysis",
-      period: "Operational Retention Case Study",
-      filterTags: ["excel", "ba"],
-      tools: ["Metric Tree", "EDA", "Excel Dashboard"],
-      summary:
-        "Root-cause investigation linking customer support service KPIs with repeat purchase retention through structured metric trees, exploratory data analysis, and an interactive Microsoft Excel dashboard.",
-      image: "assets/images/flipkart-retention-architecture.png",
-      imageCaption: "Project 08: Flipkart Customer Service Retention Metric Tree & Excel Architecture — Replaceable in js/content.js.",
-      schematicLeftLabel: "RETENTION & SERVICE KPI MODULES",
-      schematicRightLabel: "EXCEL • METRIC TREE",
-      dimensions: [
-        "Metric Tree",
-        "Exploratory Data Analysis",
-        "Customer Retention",
-        "Service KPIs",
-        "Excel Dashboard",
-        "Business Recommendations"
-      ],
-      caseStudyBlocks: [
-        {
-          heading: "Metric Tree Decomposition & CX Recommendations",
-          body: "Decomposed customer churn drivers into first-contact resolution (FCR), resolution turnaround time, and delivery escalation rates, presenting actionable operational improvements via an interactive Microsoft Excel dashboard."
-        }
-      ],
-      tableauUrl: "",
-      githubUrl: ""
+        "id": "project-08-flipkart",
+        "number": "PROJECT 08 // CUSTOMER SERVICE & CX ANALYTICS",
+        "title": "Flipkart Customer Service Analysis",
+        "period": "30,000 Customer Service Interactions",
+        "filterTags": [
+            "excel",
+            "ba"
+        ],
+        "tools": [
+            "Microsoft Excel",
+            "PivotTables",
+            "Business Analysis"
+        ],
+        "summary": "An analysis of 30,000 customer-service interactions covering satisfaction, customer sentiment, support-channel performance, call reasons, call-centre volumes, response rate and SLA compliance, supported by an Excel dashboard and a business analysis report.",
+        "images": [
+            {
+                "src": "assets/images/flipkart-customer-service-dashboard.jpg",
+                "alt": "Actual Flipkart Customer Service Dashboard showing 30,000 calls, 5.54 average CSAT, 25-minute average duration, 37% response rate and 62% SLA compliance.",
+                "label": "Actual Excel dashboard",
+                "caption": "Flipkart Customer Service Dashboard — actual project dashboard screenshot."
+            }
+        ],
+        "caseStudyBlocks": [
+            {
+                "heading": "Dashboard KPIs",
+                "body": "The dashboard reports <strong>30,000 total calls</strong>, <strong>5.54 average CSAT</strong>, <strong>25.0-minute average duration</strong>, a <strong>37% response rate</strong> and <strong>62% SLA compliance</strong>."
+            },
+            {
+                "heading": "Customer Service Patterns",
+                "body": "Billing Questions account for <strong>72%</strong> of calls, while Payments and Service Outage each account for <strong>14%</strong>. The dashboard compares customer sentiment and average CSAT across Call-Center, Chatbot, Email and Web channels, with filters for channel, call centre and reason."
+            },
+            {
+                "heading": "Analysis Scope & Limitation",
+                "body": "The report documents five business hypotheses and operational recommendations. The supplied project does not directly track repeat purchases or observed churn; customer satisfaction and sentiment should not be presented as measured customer-retention outcomes."
+            }
+        ],
+        "tableauUrl": "",
+        "githubUrl": "https://github.com/omkarmalgi/other-business-analyst-projects/tree/main/flipkart-customer-service-analysis",
+        "resources": [
+            {
+                "label": "Download Analysis Report (PDF)",
+                "url": "https://github.com/omkarmalgi/other-business-analyst-projects/raw/refs/heads/main/flipkart-customer-service-analysis/Flipkart_Customer_Service_Analysis_Report.pdf",
+                "download": true
+            },
+            {
+                "label": "Download Dashboard Screenshot",
+                "url": "assets/images/flipkart-customer-service-dashboard.jpg",
+                "download": true
+            }
+        ]
     }
-  ],
+],
 
   experience: [
     {
